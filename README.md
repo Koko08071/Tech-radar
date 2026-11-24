@@ -10,6 +10,18 @@
 
 面向产品经理、开发者、创客与科技爱好者的中文科技日报。聚焦真实科技新品、产品体验与设计思考，提供官方产品链接及历史刊期。
 
+## 网站效果图
+
+> 2026 年 11 月 24 日正式站真实浏览器截图，压缩后用于 README 展示。
+
+**首页 · 冷电蓝玻璃与海洋背景**
+
+[![科技新品雷达首页](docs/screenshots/homepage.jpg)](https://tech-radar-daily.vercel.app/)
+
+**新品与趋势 · 产品卡片与真实产品配图**
+
+[![产品展示](docs/screenshots/product-detail.jpg)](https://tech-radar-daily.vercel.app/#radar)
+
 ## 界面与功能
 
 | 栏目 | 内容 |
