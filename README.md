@@ -12,9 +12,7 @@
 
 ## 网站效果图
 
-**首页 · 冷电蓝玻璃视觉**
-
-*效果图为此前刊期的界面记录；当前科技风背景以正式网站为准。*
+**首页 · 冷电蓝玻璃与科技光影**
 
 [![科技新品雷达首页](docs/screenshots/homepage.webp)](https://tech-radar-daily.vercel.app/)
 
