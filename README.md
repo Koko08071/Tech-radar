@@ -14,11 +14,11 @@
 
 **首页 · 冷电蓝玻璃与科技光影**
 
-[![科技新品雷达首页](docs/screenshots/homepage.webp)](https://tech-radar-daily.vercel.app/)
+[![科技新品雷达首页](docs/screenshots/homepage-2026-11-24-abeda1f.webp)](https://tech-radar-daily.vercel.app/)
 
 **新品与趋势 · 产品卡片与真实产品配图**
 
-[![产品展示](docs/screenshots/product-detail.webp)](https://tech-radar-daily.vercel.app/#radar)
+[![产品展示](docs/screenshots/product-detail-2026-11-24-7397883.webp)](https://tech-radar-daily.vercel.app/#radar)
 
 当前背景：[Magda Ehlers · Blue light panels（Pexels）](https://www.pexels.com/photo/abstract-blue-light-panels-ceiling-installation-35139106/)，2026-11-24 正式站已采用。
 
