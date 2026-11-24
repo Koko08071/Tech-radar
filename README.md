@@ -14,11 +14,15 @@
 
 **首页 · 冷电蓝玻璃视觉**
 
+*效果图为此前刊期的界面记录；当前科技风背景以正式网站为准。*
+
 [![科技新品雷达首页](docs/screenshots/homepage.webp)](https://tech-radar-daily.vercel.app/)
 
 **新品与趋势 · 产品卡片与真实产品配图**
 
 [![产品展示](docs/screenshots/product-detail.webp)](https://tech-radar-daily.vercel.app/#radar)
+
+当前背景：[Magda Ehlers · Blue light panels（Pexels）](https://www.pexels.com/photo/abstract-blue-light-panels-ceiling-installation-35139106/)，2026-11-24 正式站已采用。
 
 ## 界面与功能
 
@@ -44,7 +48,7 @@ Tech-radar/
 │   └── *.css / *.js         # 样式和交互依赖
 ├── source/                  # Vercel 原始构建源码备份
 │   ├── EXPORT-MANIFEST.json # 文件来源、大小、SHA 和排除项
-│   ├── clear-glass-build.js # 当前原构建入口
+│   ├── clear-glass-build.js # 首次备份构建入口
 │   ├── package.json
 │   ├── vercel.json
 │   └── *.js / *.css / src/
@@ -72,7 +76,8 @@ python -m http.server 8000 --directory site
 1. 核查全球科技新品及版本更新，跨期去重并保留来源。
 2. 核验产品配图、生成新刊与归档，保持 UI 模板。
 3. 测试页面并发布至 Vercel，确认正式域名实际更新。
-4. 同步 GitHub 源码、当日页面及归档，核查 Git 提交。
+4. 同步 GitHub 源码、构建配置、当日页面、归档与 README；检查所有链接和效果图，背景或 UI 变化时更新真实高清截图。
+5. 复核正式站与 GitHub main 的版本一致性，记录实际提交。
 
 实际发布以网站和 GitHub 提交记录为准。定时任务由 ChatGPT 自动任务执行，并非本仓库自身的 GitHub Actions 定时爬虫。
 
