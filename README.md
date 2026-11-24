@@ -12,15 +12,13 @@
 
 ## 网站效果图
 
-> 2026 年 11 月 24 日正式站真实浏览器截图，压缩后用于 README 展示。
+**首页 · 冷电蓝玻璃视觉**
 
-**首页 · 冷电蓝玻璃与海洋背景**
-
-[![科技新品雷达首页](docs/screenshots/homepage.jpg)](https://tech-radar-daily.vercel.app/)
+[![科技新品雷达首页](docs/screenshots/homepage.webp)](https://tech-radar-daily.vercel.app/)
 
 **新品与趋势 · 产品卡片与真实产品配图**
 
-[![产品展示](docs/screenshots/product-detail.jpg)](https://tech-radar-daily.vercel.app/#radar)
+[![产品展示](docs/screenshots/product-detail.webp)](https://tech-radar-daily.vercel.app/#radar)
 
 ## 界面与功能
 
@@ -32,7 +30,7 @@
 | Product Thinking | 每日产品方法与案例 |
 | 历史日报 | 日期归档与中文日历 |
 
-视觉设计采用冷电蓝透明玻璃、顶部渐隐高光、半透明胶囊和每日真实风景摄影；产品主图完整展示，搭配同源模糊背景。支持深浅色主题与响应式布局。
+视觉设计采用冷电蓝透明玻璃、顶部渐隐高光、半透明胶囊和每日高清科技风摄影与授权设计素材；产品主图完整展示，搭配同源模糊背景。支持深浅色主题与响应式布局。
 
 ## 项目结构
 
