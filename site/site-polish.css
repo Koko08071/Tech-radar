@@ -1,0 +1,62 @@
+
+/* EDITORIAL CARDS — generous hierarchy, full-height image treatment */
+#radar .product{grid-template-columns:minmax(0,40%) minmax(0,60%);min-height:360px;background:linear-gradient(140deg,rgba(16,35,63,.88),rgba(8,23,45,.86));border:1px solid rgba(160,203,246,.20);border-radius:23px;overflow:hidden;box-shadow:0 18px 45px rgba(1,12,32,.20)}
+#radar .product .visual{isolation:isolate;position:relative;display:block;min-height:360px;padding:0;overflow:hidden;background:#152b47}
+#radar .product .visual:before{content:"";position:absolute;z-index:0;inset:-20px;background:var(--image) center/cover no-repeat;filter:blur(26px) brightness(.7) saturate(1.12);transform:scale(1.07)}
+#radar .product .visual:after{content:"";position:absolute;z-index:1;inset:0;background:linear-gradient(180deg,rgba(5,18,38,.05),rgba(5,15,30,.04) 52%,rgba(5,15,30,.54));pointer-events:none}
+#radar .product .visual img{position:absolute;inset:0;width:100%;height:100%;max-height:none;padding:10px 12px 40px;box-sizing:border-box;object-fit:contain;display:block;z-index:2;border-radius:0;filter:drop-shadow(0 10px 23px rgba(0,0,0,.28))}
+#radar .product .credit{z-index:3;background:rgba(6,18,39,.58);border:1px solid rgba(182,216,251,.16);border-radius:8px;padding:5px 9px;font-size:11px;color:#e7f3ff}
+#radar .product .body{padding:31px 35px;display:flex;flex-direction:column;justify-content:center}
+#radar .product .meta{font-size:13px;line-height:1.6;gap:15px;color:#a8bfd8}
+#radar .product .kind{font-size:13px;color:#c3b2fb}
+#radar .product .body h3{font-size:clamp(26px,2.1vw,32px);letter-spacing:-.025em;line-height:1.25;margin:13px 0 12px;color:#f3f7ff}
+#radar .product .desc{font-size:17px;line-height:1.73;color:#d9e6f4;margin:0 0 17px}
+#radar .product .why{padding:12px 17px;margin:0 0 19px;background:linear-gradient(90deg,rgba(132,117,233,.11),transparent);border-left:2px solid #ab9bff}
+#radar .product .why b{font-size:13px;color:#c7b7ff;margin-bottom:5px;display:block}
+#radar .product .why p{font-size:15.5px;line-height:1.72;color:#cfdaeb;margin:0}
+#radar .product .facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:0;padding-top:17px;border-top:1px solid rgba(170,208,245,.16)}
+#radar .product .facts small{font-size:12px;color:#a9bdd4;display:block;margin-bottom:5px}
+#radar .product .facts strong{font-size:14.8px;font-weight:600;line-height:1.65;color:#ebf3fb;overflow-wrap:anywhere}
+#radar .product .source{font-size:15px;margin-top:10px;color:#c9b7ff}
+#radar .extra-info{margin:7px 0 0}
+#radar .extra-info summary{list-style:none;cursor:pointer;color:#bfd5ed;font-size:13.5px;font-weight:650;padding:7px 0}
+#radar .extra-info summary::-webkit-details-marker{display:none}
+#radar .extra-info summary:after{content:" ＋"}
+#radar .extra-info[open] summary:after{content:" −"}
+#radar .extra-body{font-size:14.5px;color:#d2e0ed;line-height:1.7;padding:7px 0}
+#radar .extra-body small{display:block;color:#92b2d2}
+#radar .visual.image-failed:before{display:none}
+body.light #radar .product{background:rgba(255,255,255,.93);border-color:rgba(64,102,141,.16);box-shadow:0 15px 40px rgba(42,69,109,.11)}
+body.light #radar .product .visual{background:#dfebf8}
+body.light #radar .product .visual:before{filter:blur(25px) brightness(1.05);opacity:.67}
+body.light #radar .product .visual:after{background:linear-gradient(180deg,rgba(235,246,255,.07),rgba(218,234,251,.30) 80%)}
+body.light #radar .product .credit{color:#35536e;background:rgba(254,254,255,.82);border-color:rgba(64,102,141,.17)}
+body.light #radar .product .body h3{color:#18344e}
+body.light #radar .product .meta,body.light #radar .product .facts small{color:#617d96}
+body.light #radar .product .kind,body.light #radar .product .why b,body.light #radar .product .source{color:#6252ad}
+body.light #radar .product .desc,body.light #radar .product .why p,body.light #radar .product .facts strong,body.light #radar .extra-body{color:#405a73}
+body.light #radar .extra-info summary{color:#4b6a89}
+@media(max-width:980px){#radar .product{grid-template-columns:39% 61%}#radar .product .body{padding:26px 25px}#radar .product .desc{font-size:16px}}
+@media(max-width:720px){#radar .product{grid-template-columns:1fr}#radar .product .visual{aspect-ratio:16/10;min-height:235px}#radar .product .body{padding:25px 22px}}
+@media(max-width:360px){#radar .product .body{padding:21px 17px}#radar .product .facts{grid-template-columns:1fr}}
+/* HERO — compact playful robot game */
+.hero.hero-interactive{grid-template-columns:minmax(0,1fr) minmax(265px,330px);gap:42px}
+#radar-mini.hop-game{padding:16px;border-radius:22px;background:linear-gradient(150deg,rgba(17,38,68,.86),rgba(8,25,47,.81));border:1px solid rgba(158,208,254,.25);box-shadow:0 22px 56px rgba(3,13,30,.26),inset 0 1px rgba(255,255,255,.13)}
+.hop-header{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px;color:#c3e1f7;font-size:11px;font-weight:750;letter-spacing:.06em}
+.hop-header small{color:#a3bcd7;letter-spacing:0;font-size:11px}
+.hop-board{display:block;position:relative;outline:none;border:1px solid rgba(145,202,244,.24);border-radius:15px;overflow:hidden;aspect-ratio:1.8;background:linear-gradient(#11365c,#091c34);cursor:pointer;touch-action:manipulation}
+.hop-board:focus-visible{outline:2px solid #92d5ff;outline-offset:3px}
+.hop-board canvas{width:100%;height:100%;display:block}
+.hop-instruction{color:#aecde7;font-size:11px;display:block;margin:8px 0 0;text-align:center}
+.hop-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:11px}
+.hop-footer b{font:700 18px "Segoe UI",sans-serif;color:#edf7ff;font-variant-numeric:tabular-nums}
+.hop-footer button{cursor:pointer;border-radius:11px;padding:9px 13px;border:1px solid rgba(148,204,255,.27);background:rgba(124,173,255,.19);color:#e9f5ff;font-size:12px;font-weight:720}
+.hop-footer button:hover{background:rgba(124,173,255,.29)}
+body.light #radar-mini.hop-game{background:rgba(248,251,255,.9);border-color:rgba(58,106,152,.21);box-shadow:0 16px 40px rgba(35,67,105,.14)}
+body.light .hop-header,body.light .hop-footer b{color:#345672}
+body.light .hop-header small,body.light .hop-instruction{color:#607d96}
+body.light .hop-board{background:#e7f3fc;border-color:rgba(66,122,174,.20)}
+body.light .hop-footer button{color:#365e7a;background:rgba(88,151,216,.16)}
+@media(max-width:970px){.hero.hero-interactive{gap:24px;grid-template-columns:minmax(0,1fr) 280px}}
+@media(max-width:790px){.hero.hero-interactive{grid-template-columns:1fr}.hero #radar-mini.hop-game{max-width:360px;justify-self:center;width:100%}}
+@media(prefers-reduced-motion:reduce){.hop-board{scroll-behavior:auto}}
