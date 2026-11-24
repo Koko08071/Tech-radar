@@ -1,0 +1,1 @@
+const cp=require('child_process');for(const s of ['radar-photo-build.js','blue-glass-v7.js'])cp.execFileSync('node',[s],{stdio:'inherit',timeout:180000});

@@ -1,0 +1,24 @@
+
+const fs=require("fs");
+let h=fs.readFileSync("src/index.html","utf8");
+const widget=fs.readFileSync("ambient.html","utf8");
+if(!h.includes('class="radar-mini hop-game"'))throw Error("Expected existing isolated panel not found");
+const pattern=/<aside class="radar-mini hop-game"[\s\S]*?<\/aside>/;
+if(!pattern.test(h))throw Error("Panel section missing");
+h=h.replace(pattern,widget);
+h=h.replace('<script src="/hop.js" defer></script>','<script src="/ambient.js" defer></script>');
+if(!h.includes('src="/ambient.js"'))throw Error("Script swap failed");
+if(!h.includes('</head>'))throw Error("Document head missing");
+h=h.replace('</head>','<link rel="stylesheet" href="/ambient.css"/></head>');
+const news=JSON.parse(h.match(/const items=(\[[\s\S]*?\]);const esc=/)[1]);
+const names=[...h.matchAll(/<article class="panel try-card">[\s\S]*?<h3>([^<]+)<\/h3>/g)].map(m=>m[1]);
+if(news.length!==8||names.length!==2||names.some(n=>news.some(x=>x.name===n)))throw Error("News/tools regression");
+for(const must of ['id="ambient-canvas"','id="ambient-field"','id="radar"','id="insight"','id="academy"','id="archive"','calendar-lunar.js','Asia/Shanghai'])if(!h.includes(must))throw Error("Missing required module: "+must);
+if(h.includes('class="radar-mini hop-game"')||h.includes('src="/hop.js"'))throw Error("Isolated old panel remained");
+const scripts=[...h.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)].map(m=>m[1]).filter(Boolean);
+scripts.forEach((script,i)=>{try{new Function(script)}catch(e){throw Error("Inline script "+i+": "+e.message)}});
+const ambient=fs.readFileSync("ambient.js","utf8");new Function(ambient);
+fs.copyFileSync("ambient.css","src/ambient.css");
+fs.copyFileSync("ambient.js","src/ambient.js");
+fs.writeFileSync("src/index.html",h);
+console.log("AMBIENT PATCH VALID: transparent hero easter egg; 8 news; 2 tools; 5 sections; "+scripts.length+" inline scripts");

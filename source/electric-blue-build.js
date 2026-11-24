@@ -1,0 +1,1 @@
+const cp=require('child_process');for(const s of ['header-build-v2.js','electric-blue-v3.js'])cp.execFileSync('node',[s],{stdio:'inherit',timeout:180000});

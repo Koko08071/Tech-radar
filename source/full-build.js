@@ -1,0 +1,1 @@
+const cp=require('child_process');const scripts=['build.js','ambient-patch.js','lesson-compact.js','post-audit.js','fix-archive19.js','preflight22.js','issue22.js','fogg-visual-patch.js','fogg-contrast-patch.js','editorial-patch.js','archive21-fix.js'];for(const s of scripts){cp.execFileSync('node',[s],{stdio:'inherit',timeout:130000})}

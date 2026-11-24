@@ -1,0 +1,1 @@
+const cp=require('child_process');for(const s of ['optical-glass-build.js','clear-glass-v9.js'])cp.execFileSync('node',[s],{stdio:'inherit',timeout:180000});

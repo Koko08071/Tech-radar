@@ -1,0 +1,105 @@
+
+/* The Easter egg belongs to the hero's space, not inside a widget. */
+.hero.hero-interactive{
+  grid-template-columns:minmax(0,1fr) minmax(0,45%);
+  align-items:center;
+  column-gap:clamp(12px,2.5vw,44px);
+}
+.hero.hero-interactive>.ambient-play{
+  position:relative;
+  width:100%;min-width:0;
+  max-width:640px;
+  justify-self:end;
+  margin:0 -10px 0 0;
+  padding:0;
+  background:transparent;
+  border:0;
+  box-shadow:none;
+  outline:0;
+  backdrop-filter:none;
+  -webkit-backdrop-filter:none;
+  isolation:isolate;
+}
+.ambient-top,.ambient-foot{
+  position:relative;display:flex;justify-content:space-between;align-items:center;gap:16px;
+  margin:0 clamp(10px,2vw,24px);
+  color:rgba(220,235,250,.73);
+  font:600 11px/1.5 "Segoe UI","PingFang SC",sans-serif;
+  letter-spacing:.07em;
+  user-select:none;
+}
+.ambient-top{margin-bottom:0;transform:translateY(20px);z-index:2;pointer-events:none}
+.ambient-star{color:#bcaaff;font-size:14px;vertical-align:-1px;padding-right:5px;filter:drop-shadow(0 0 7px rgba(188,170,255,.36))}
+.ambient-title{font-size:10px;letter-spacing:.16em;font-weight:700;white-space:nowrap}
+.ambient-score,.ambient-best{font-size:11px;font-variant-numeric:tabular-nums;letter-spacing:.06em;white-space:nowrap}
+.ambient-score b,.ambient-best b{color:#edf5ff;font-weight:650;font-size:13px;letter-spacing:.04em}
+.ambient-field{
+  position:relative;
+  display:block;width:100%;
+  overflow:visible;cursor:pointer;touch-action:manipulation;
+  outline:none;background:none;border:0;
+  border-radius:0;box-shadow:none;
+  -webkit-tap-highlight-color:transparent;
+}
+.ambient-field:focus-visible{outline:1px dashed rgba(154,210,255,.60);outline-offset:-5px}
+.ambient-field canvas{
+  display:block;width:100%;height:auto;aspect-ratio:850/390;
+  background:transparent;
+  filter:drop-shadow(0 5px 15px rgba(4,15,31,.13));
+  pointer-events:none;
+}
+.ambient-foot{
+  margin-top:-7px;
+  color:rgba(197,219,238,.78);
+  font-size:11px;
+  line-height:1.6;
+  letter-spacing:.025em;
+}
+.ambient-foot>span:first-child{max-width:250px}
+.ambient-key{
+  border-left:1px solid rgba(213,231,255,.28);
+  padding-left:10px;
+  margin-left:6px;
+  color:rgba(225,234,248,.65);
+  font-size:10px;
+  letter-spacing:.09em;
+}
+.ambient-game-over{
+  position:absolute;
+  left:50%;top:49%;
+  transform:translate(-50%,-50%);
+  border:0;background:transparent;
+  color:#f5faff;
+  font:700 clamp(18px,2vw,23px)/1.35 "Segoe UI","PingFang SC",sans-serif;
+  text-shadow:0 2px 20px rgba(1,13,32,.82);
+  white-space:nowrap;pointer-events:none;
+}
+.ambient-game-over span{color:#9ee7ff;padding-left:6px}
+.ambient-game-over[hidden]{display:none!important}
+.ambient-play:hover .ambient-title{color:#e3f4ff}
+body.light .ambient-top,body.light .ambient-foot{color:rgba(38,71,99,.85);text-shadow:0 1px 3px rgba(255,255,255,.55)}
+body.light .ambient-star{color:#785eb4}
+body.light .ambient-score b,body.light .ambient-best b{color:#264561}
+body.light .ambient-key{border-left-color:rgba(42,91,137,.30);color:rgba(45,83,115,.75)}
+body.light .ambient-game-over{color:#254560;text-shadow:0 1px 8px rgba(246,253,255,.88)}
+@media(max-width:1100px){
+ .hero.hero-interactive{grid-template-columns:minmax(0,1fr) minmax(0,40%);gap:10px}
+ .ambient-title{font-size:9px;letter-spacing:.08em}
+ .ambient-top,.ambient-foot{margin-left:4px;margin-right:4px}
+}
+@media(max-width:790px){
+ .hero.hero-interactive{grid-template-columns:1fr;gap:14px}
+ .hero.hero-interactive>.ambient-play{justify-self:center;max-width:540px;margin:0 auto 10px}
+ .ambient-top{transform:translateY(10px)}
+ .ambient-foot{margin-top:-9px}
+}
+@media(max-width:430px){
+ .ambient-title{font-size:9px}
+ .ambient-top,.ambient-foot{font-size:10px}
+ .ambient-key{display:none}
+ .ambient-score b,.ambient-best b{font-size:12px}
+ .hero.hero-interactive>.ambient-play{max-width:100%}
+}
+@media(prefers-reduced-motion:reduce){
+ .ambient-field canvas{filter:none}
+}

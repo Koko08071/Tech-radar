@@ -1,0 +1,16 @@
+
+/* Visual QA refinements: readable labels on light surfaces and tablet layout */
+body.light #academy .fogg-svg [fill="#76ebd1"],
+body.light #academy .fogg-svg [fill="#7befd7"],
+body.light #academy .fogg-svg [fill="#96f5df"],
+body.light #academy .fogg-svg [fill="#a4f7e4"]{fill:#167a6b}
+body.light #academy .fogg-svg [fill="#ffc2a3"],
+body.light #academy .fogg-svg [fill="#ffcaaf"]{fill:#a54c2d}
+body.light #academy .fogg-svg [fill="#69ecd1"],
+body.light #academy .fogg-svg [fill="#7aebd8"]{fill:#168779}
+@media (min-width:501px) and (max-width:900px){
+  #academy .fogg-diagram-layout{grid-template-columns:1fr;gap:9px}
+  #academy .fogg-diagram-graphic{width:100%;max-width:665px;margin:0 auto}
+  #academy .fogg-diagram-guide{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 20px;padding:8px 6px 12px}
+  #academy .fogg-guide-takeaway{grid-column:1/-1}
+}

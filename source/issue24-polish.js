@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('fs'),p='src/index.html';let s=fs.readFileSync(p,'utf8');
+if(!s.includes('2026.11.24')||!s.includes('MoSCoW'))throw Error('Cannot clean unspecified issue');
+s=s.replace('<strong>07</strong><small>精选项目</small>','<strong>06</strong><small>精选项目</small>');
+s=s.replace('<a class="archive-link" href="/archive/2026-11-23.html">','<a class="panel archive-item" href="/archive/2026-11-23.html">');
+s=s.replace('聚焦全球近7天值得关注的真实新品与重大更新；注明每项事件日期。','每天发现值得关注的 AI、新硬件与数字产品。');
+s=s.replace('全球选品 · 优先官方截图、产品实拍与品牌素材','从新发布到重大更新，聚焦真正值得了解的创新');
+s=s.replaceAll(' · 全部提供原始来源','');
+fs.writeFileSync(p,s);
+console.log('NOV24 DESIGN QA: 06 news metric, archive matching card style, editorial footnotes removed, concise hero');

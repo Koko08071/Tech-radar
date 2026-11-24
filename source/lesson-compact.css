@@ -1,0 +1,82 @@
+
+/* Refined editorial reading experience + subtle, smaller hero easter egg */
+.hero.hero-interactive{grid-template-columns:minmax(0,1fr) minmax(0,305px)!important;gap:clamp(16px,2.6vw,42px)!important}
+.hero.hero-interactive>.ambient-play{max-width:305px!important;width:100%!important;justify-self:end;margin:0 12px 0 0!important;transform:translateY(8px)}
+.ambient-title{font-size:9px!important;letter-spacing:.065em!important}
+.ambient-top,.ambient-foot{font-size:10px!important;margin-left:4px!important;margin-right:4px!important}
+.ambient-score,.ambient-best{font-size:10px!important}
+.ambient-score b,.ambient-best b{font-size:12px!important}
+.ambient-foot{margin-top:-2px!important}
+.ambient-key{font-size:9px!important;padding-left:6px!important;margin-left:3px!important}
+@media(max-width:790px){.hero.hero-interactive{grid-template-columns:1fr!important;gap:12px!important}.hero.hero-interactive>.ambient-play{max-width:295px!important;margin:0 auto 10px!important;justify-self:center;transform:none}}
+@media(max-width:390px){.hero.hero-interactive>.ambient-play{max-width:260px!important}.ambient-title{font-size:8.5px!important}}
+#academy .lesson-readable{padding:clamp(26px,3.1vw,46px)!important}
+#academy .lesson-readable .tag{font-size:11.5px;letter-spacing:.13em;margin-bottom:16px}
+#academy .rice-hero{display:grid;grid-template-columns:minmax(0,1fr) 202px;align-items:center;gap:32px;margin-bottom:36px}
+#academy .rice-headline h3{font-size:clamp(29px,2.4vw,38px)!important;line-height:1.25;letter-spacing:-.035em;margin:0 0 18px!important}
+#academy .rice-deck{font-size:18px;line-height:1.85;color:#d3e1f1;max-width:62ch;margin:0;overflow-wrap:anywhere}
+#academy .rice-deck strong{color:#f1f6ff;font-weight:680}
+#academy .rice-equation{border-radius:18px;padding:21px 16px;background:rgba(115,162,230,.09);border:1px solid rgba(147,189,235,.19);text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
+#academy .rice-equation small{font-size:10px;color:#9ec7e8;letter-spacing:.14em;font-weight:750;margin-bottom:8px}
+#academy .rice-equation b{font:690 24px/1.15 "Segoe UI",sans-serif;letter-spacing:.07em;color:#eef6ff}
+#academy .rice-equation .rice-line{height:1px;width:125px;background:rgba(190,218,254,.6)}
+#academy .rice-equation em{font-size:11px;color:#a9bdd6;font-style:normal;line-height:1.5;margin-top:6px}
+#academy .rice-label{display:flex;align-items:baseline;gap:17px;flex-wrap:wrap;margin:0 0 17px}
+#academy .rice-label span{font-size:11px;letter-spacing:.12em;font-weight:760;color:#8ecff3}
+#academy .rice-label h4{margin:0;font-size:21px;line-height:1.4;color:#f0f6ff}
+#academy .rice-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 18px;margin-bottom:42px}
+#academy .rice-metric{padding:19px 22px 21px;border-radius:15px;border:1px solid rgba(163,196,233,.14);background:rgba(115,159,221,.055)}
+#academy .rice-initial{display:flex;align-items:baseline;gap:9px;font-size:18px;font-weight:760;color:#9bdffa;letter-spacing:.025em;margin-bottom:10px}
+#academy .rice-initial small{font-size:10px;letter-spacing:.14em;font-weight:730;color:#91bad8}
+#academy .rice-metric strong{display:block;font-size:19px;line-height:1.5;color:#f0f5fe;margin-bottom:7px;letter-spacing:-.01em}
+#academy .rice-metric p{font-size:16px;line-height:1.8;color:#c5d4e5;margin:0}
+#academy .rice-case{border-top:1px solid rgba(182,211,246,.15);padding-top:32px}
+#academy .rice-case-intro{font-size:17px;line-height:1.85;color:#d2e0ef;max-width:80ch;margin:0 0 22px}
+#academy .rice-case-intro b{color:#fafbff;font-weight:700}
+#academy .rice-example-list{display:grid;gap:0;padding:0 4px}
+#academy .rice-example{display:grid;grid-template-columns:minmax(160px,27%) minmax(0,1fr);align-items:start;gap:22px;padding:17px 5px;border-bottom:1px solid rgba(165,198,231,.13)}
+#academy .rice-example strong{color:#eaf5ff;font-size:17px;line-height:1.5}
+#academy .rice-example strong small{font-size:12px;font-weight:550;color:#9ebad3;padding-left:5px}
+#academy .rice-example>span{font-size:16px;line-height:1.75;color:#cbd9e9}
+#academy .rice-evidence-note{font-size:13px;line-height:1.75;color:#9fb3c9;margin:14px 0 26px}
+#academy .rice-expand{border:1px solid rgba(145,191,239,.24);background:rgba(126,169,222,.07);border-radius:15px;overflow:hidden;margin:0 0 25px}
+#academy .rice-expand summary{display:flex;align-items:center;justify-content:space-between;gap:14px;cursor:pointer;padding:20px 22px;list-style:none;color:#e9f4ff;font-size:17px;font-weight:710}
+#academy .rice-expand summary::-webkit-details-marker{display:none}
+#academy .rice-expand summary small{font-size:12px;color:#9eb8d4;font-weight:520;margin-left:auto}
+#academy .rice-plus{width:22px;height:22px;position:relative;flex:0 0 22px;border-radius:50%;background:rgba(147,200,255,.11)}
+#academy .rice-plus:after{content:"+";position:absolute;left:0;top:0;right:0;text-align:center;font-size:21px;line-height:21px;color:#b9dafa}
+#academy .rice-expand[open] .rice-plus:after{content:"−"}
+#academy .rice-expand-body{border-top:1px solid rgba(149,190,230,.16);padding:22px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 30px}
+#academy .rice-expand-body b{color:#ecf5ff;font-size:16px}
+#academy .rice-expand-body p{font-size:15.5px;line-height:1.75;color:#c5d3e5;margin:8px 0 0}
+#academy .rice-warning{grid-column:1/-1;border-left:2px solid #aa9cf5;padding:12px 15px;background:rgba(131,119,230,.07);color:#d2dfef!important}
+#academy .rice-warning strong{color:#c9bbff}
+#academy .rice-source{font-size:13px;color:#92b3d0;line-height:1.6}
+#academy .rice-source a{color:#c3b5ff;text-decoration:none;border-bottom:1px solid rgba(202,182,255,.4)}
+#academy .rice-source a:hover{border-bottom-color:currentColor}
+body.light #academy .rice-deck,body.light #academy .rice-case-intro{color:#455f77}
+body.light #academy .rice-deck strong,body.light #academy .rice-case-intro b{color:#263f58}
+body.light #academy .rice-equation{background:rgba(118,170,223,.10);border-color:rgba(74,118,163,.17)}
+body.light #academy .rice-equation small,body.light #academy .rice-equation em{color:#567791}
+body.light #academy .rice-equation b,body.light #academy .rice-label h4{color:#233d57}
+body.light #academy .rice-equation .rice-line{background:rgba(63,112,151,.35)}
+body.light #academy .rice-metric{background:rgba(243,248,254,.77);border-color:rgba(79,121,162,.15)}
+body.light #academy .rice-initial{color:#32779b}
+body.light #academy .rice-initial small{color:#567b97}
+body.light #academy .rice-metric strong,body.light #academy .rice-example strong{color:#29445f}
+body.light #academy .rice-metric p,body.light #academy .rice-example>span{color:#47627e}
+body.light #academy .rice-label span{color:#427d9a}
+body.light #academy .rice-case{border-top-color:rgba(68,116,155,.15)}
+body.light #academy .rice-example{border-bottom-color:rgba(72,114,154,.13)}
+body.light #academy .rice-example strong small,body.light #academy .rice-evidence-note{color:#668098}
+body.light #academy .rice-expand{background:rgba(248,251,255,.82);border-color:rgba(71,114,161,.18)}
+body.light #academy .rice-expand summary{color:#2c4b65}
+body.light #academy .rice-expand summary small,body.light #academy .rice-source{color:#667e94}
+body.light #academy .rice-expand-body{border-top-color:rgba(69,108,154,.17)}
+body.light #academy .rice-expand-body b{color:#2d4b65}
+body.light #academy .rice-expand-body p{color:#516b82}
+body.light #academy .rice-warning{color:#3e5d75!important}
+body.light #academy .rice-warning strong,body.light #academy .rice-source a{color:#6354ad}
+@media(max-width:1024px){#academy .rice-hero{grid-template-columns:minmax(0,1fr) 176px;gap:16px}#academy .rice-deck{font-size:17px}#academy .rice-example{grid-template-columns:minmax(150px,31%) 1fr;gap:14px}}
+@media(max-width:720px){#academy .rice-hero{grid-template-columns:1fr;gap:19px;margin-bottom:27px}#academy .rice-equation{width:min(100%,230px);padding:15px 12px}#academy .rice-metrics{grid-template-columns:1fr;gap:10px;margin-bottom:29px}#academy .rice-metric{padding:18px}#academy .rice-example{grid-template-columns:1fr;gap:4px;padding:15px 2px}#academy .rice-expand-body{grid-template-columns:1fr}#academy .rice-expand summary{flex-wrap:wrap;padding:16px}#academy .rice-expand summary small{margin-left:0}}
+@media(max-width:390px){#academy .lesson-readable{padding:22px 18px!important}#academy .rice-headline h3{font-size:27px!important}#academy .rice-deck{font-size:16px}#academy .rice-metric strong{font-size:18px}#academy .rice-metric p{font-size:15.5px}}

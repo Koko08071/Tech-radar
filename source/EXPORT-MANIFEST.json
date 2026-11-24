@@ -1,0 +1,628 @@
+{
+  "deployment": "dpl_C9mtZUSQd4vdo5r6G2X38aV6yS9L",
+  "files": [
+    {
+      "path": "adjacent-month.js",
+      "bytes": 3283,
+      "sha": "2d94091f04acb3728e4a2f0c4bfcf6d2a07e430d",
+      "chunks": [
+        "0-0.txt"
+      ]
+    },
+    {
+      "path": "ambient-patch.js",
+      "bytes": 1895,
+      "sha": "572684ab30caa5f4ec4ea2e3cec1ab5567e254d6",
+      "chunks": [
+        "1-0.txt"
+      ]
+    },
+    {
+      "path": "ambient.css",
+      "bytes": 3873,
+      "sha": "91f2e12c41e34b6e6eb8f594f851f39b2f255c6d",
+      "chunks": [
+        "2-0.txt"
+      ]
+    },
+    {
+      "path": "ambient.html",
+      "bytes": 933,
+      "sha": "432e0b27a23bf97223a6db5c301205f1254d9a2d",
+      "chunks": [
+        "3-0.txt"
+      ]
+    },
+    {
+      "path": "ambient.js",
+      "bytes": 6080,
+      "sha": "528f105227977927cece546686c4476edeaa9163",
+      "chunks": [
+        "4-0.txt"
+      ]
+    },
+    {
+      "path": "archive21-fix.js",
+      "bytes": 2088,
+      "sha": "c315c6d0a7cd1dac3c7fcec9cecc3e5891ca0be6",
+      "chunks": [
+        "5-0.txt"
+      ]
+    },
+    {
+      "path": "blue-glass-build.js",
+      "bytes": 154,
+      "sha": "c060d33515fd91df8646c973e6961884229fa523",
+      "chunks": [
+        "6-0.txt"
+      ]
+    },
+    {
+      "path": "blue-glass-v7.js",
+      "bytes": 7295,
+      "sha": "65a15e31f3e3d09727319acf17e2beac4900ac60",
+      "chunks": [
+        "7-0.txt"
+      ]
+    },
+    {
+      "path": "build.js",
+      "bytes": 2091,
+      "sha": "ec0cc6714b5298f74d573b84ef1147719cbe70ca",
+      "chunks": [
+        "8-0.txt"
+      ]
+    },
+    {
+      "path": "clean-grid.js",
+      "bytes": 1781,
+      "sha": "2f399850eac6c092ca2b22d633a13c75341f95b5",
+      "chunks": [
+        "9-0.txt"
+      ]
+    },
+    {
+      "path": "clear-glass-build.js",
+      "bytes": 157,
+      "sha": "f178b10a95acfd71ed9d7003a2c7fd3d4eaa903d",
+      "chunks": [
+        "10-0.txt"
+      ]
+    },
+    {
+      "path": "clear-glass-v9.js",
+      "bytes": 5948,
+      "sha": "0b00cfd2f5b3b7c63d064c882236fbf87d383e65",
+      "chunks": [
+        "11-0.txt"
+      ]
+    },
+    {
+      "path": "daily-photo-patch.js",
+      "bytes": 7648,
+      "sha": "62edefd7e1f8270ba88d0ab90fe70f897d0ce065",
+      "chunks": [
+        "12-0.txt"
+      ]
+    },
+    {
+      "path": "daily.br.b64",
+      "bytes": 31416,
+      "sha": "3361b92f5b6f755a8d6bb04fb5e062462dd0a747",
+      "chunks": [
+        "13-0.txt"
+      ]
+    },
+    {
+      "path": "dedupe-wallpaper.js",
+      "bytes": 5284,
+      "sha": "1847f26a5ce856caea3904807d8a03995b89be36",
+      "chunks": [
+        "14-0.txt"
+      ]
+    },
+    {
+      "path": "editorial-patch.js",
+      "bytes": 3081,
+      "sha": "78cf960379cda15891bd493572ab01fbb84e35b5",
+      "chunks": [
+        "15-0.txt"
+      ]
+    },
+    {
+      "path": "editorial.css",
+      "bytes": 20843,
+      "sha": "b7c56e3d2f22358792c2fcff3f14d3de778e3cb5",
+      "chunks": [
+        "16-0.txt"
+      ]
+    },
+    {
+      "path": "editorial.js",
+      "bytes": 3582,
+      "sha": "ddccdbc11b7577437701c3b508c02e36c901f9a7",
+      "chunks": [
+        "17-0.txt"
+      ]
+    },
+    {
+      "path": "electric-blue-build.js",
+      "bytes": 155,
+      "sha": "5c58b9be1cbf256ec8a8f71483ee431629019f19",
+      "chunks": [
+        "18-0.txt"
+      ]
+    },
+    {
+      "path": "electric-blue-v3.js",
+      "bytes": 4550,
+      "sha": "0680c433cc44272d0dba81ce4c35d2c6601eecff",
+      "chunks": [
+        "19-0.txt"
+      ]
+    },
+    {
+      "path": "finalize.js",
+      "bytes": 3349,
+      "sha": "4aec02e9e455095f65bba15d646c1cb73c156081",
+      "chunks": [
+        "20-0.txt"
+      ]
+    },
+    {
+      "path": "fix-archive19.js",
+      "bytes": 860,
+      "sha": "5764972fa4ff9788cc8338f6f42c669ed42121f1",
+      "chunks": [
+        "21-0.txt"
+      ]
+    },
+    {
+      "path": "fix-photo-script.js",
+      "bytes": 840,
+      "sha": "df0cbdf86f25cd4d437efb0f208f77d01880135c",
+      "chunks": [
+        "22-0.txt"
+      ]
+    },
+    {
+      "path": "fogg-contrast-patch.js",
+      "bytes": 579,
+      "sha": "beb8eb490ac93bd43264f61d55fea331965f4d83",
+      "chunks": [
+        "23-0.txt"
+      ]
+    },
+    {
+      "path": "fogg-contrast.css",
+      "bytes": 873,
+      "sha": "69aa9624a7a1f580008b8086f125038a3ef9dabd",
+      "chunks": [
+        "24-0.txt"
+      ]
+    },
+    {
+      "path": "fogg-figure.css",
+      "bytes": 5095,
+      "sha": "ec781cbff6fba184ba0d51e4fe0dab6a87a7b128",
+      "chunks": [
+        "25-0.txt"
+      ]
+    },
+    {
+      "path": "fogg-figure.html",
+      "bytes": 7889,
+      "sha": "13ce2465f36c09f6f502f794e0a8ee86fc130105",
+      "chunks": [
+        "26-0.txt"
+      ]
+    },
+    {
+      "path": "fogg-visual-patch.js",
+      "bytes": 2370,
+      "sha": "0ec220a93566683a83c297cddb74db883e17cfae",
+      "chunks": [
+        "27-0.txt"
+      ]
+    },
+    {
+      "path": "fogg-zh-annotated.webp",
+      "excluded": "binary asset: redistribution review required"
+    },
+    {
+      "path": "forecast-algorithm.js",
+      "bytes": 3411,
+      "sha": "705213d32516eb60b7c29b2e287999113e26c650",
+      "chunks": [
+        "29-0.txt"
+      ]
+    },
+    {
+      "path": "forecast-patch.js",
+      "bytes": 5852,
+      "sha": "4945410f08cfd05e491cf0c150b4190858c84404",
+      "chunks": [
+        "30-0.txt"
+      ]
+    },
+    {
+      "path": "full-build.js",
+      "bytes": 338,
+      "sha": "a1a4ad677c0bf94543a7e6befbdef59a88f895fc",
+      "chunks": [
+        "31-0.txt"
+      ]
+    },
+    {
+      "path": "glass-build.js",
+      "bytes": 151,
+      "sha": "e5a14b9f34e1cbfaa3ef0c02031332d2db607ab3",
+      "chunks": [
+        "32-0.txt"
+      ]
+    },
+    {
+      "path": "glass-ui.css",
+      "bytes": 5201,
+      "sha": "9f65056d8bed5ec22cbbc92bb37995586b27f287",
+      "chunks": [
+        "33-0.txt"
+      ]
+    },
+    {
+      "path": "glass-ui.js",
+      "bytes": 1633,
+      "sha": "0b6a52f7c8bcb0e7e8c43cfd927d33d5b889cb04",
+      "chunks": [
+        "34-0.txt"
+      ]
+    },
+    {
+      "path": "glass-v4.js",
+      "bytes": 7898,
+      "sha": "98009fabcd16dd6c6bb92bafcb9069b5a801472a",
+      "chunks": [
+        "35-0.txt"
+      ]
+    },
+    {
+      "path": "header-build-v2.js",
+      "bytes": 155,
+      "sha": "d54067cee4616f1bc5d040d60730e4c62dca4ea1",
+      "chunks": [
+        "36-0.txt"
+      ]
+    },
+    {
+      "path": "header-metrics-v2.js",
+      "bytes": 8934,
+      "sha": "026e4d70c285da006a70509476cb78e7c16d8597",
+      "chunks": [
+        "37-0.txt"
+      ]
+    },
+    {
+      "path": "hop.html",
+      "bytes": 714,
+      "sha": "fda90eaf428987f4863075572764b21d86f07d86",
+      "chunks": [
+        "38-0.txt"
+      ]
+    },
+    {
+      "path": "hop.js",
+      "bytes": 4605,
+      "sha": "e0b3adcb5ce14c374f1d21d447becf9a83effae1",
+      "chunks": [
+        "39-0.txt"
+      ]
+    },
+    {
+      "path": "issue22-data.json",
+      "bytes": 10719,
+      "sha": "a4293bb49c52877473a30aa578d443ed22d90f10",
+      "chunks": [
+        "40-0.txt"
+      ]
+    },
+    {
+      "path": "issue22.js",
+      "bytes": 12624,
+      "sha": "dee3b0b7170604f519c7a6a4a52343ffe3380436",
+      "chunks": [
+        "41-0.txt"
+      ]
+    },
+    {
+      "path": "issue23-apply.js",
+      "bytes": 857,
+      "sha": "46e0c122b739b489f0f5c1a2707df545ae528f81",
+      "chunks": [
+        "42-0.txt"
+      ]
+    },
+    {
+      "path": "issue23-home.html",
+      "bytes": 130790,
+      "sha": "1ee96af5f43db67268fe956d14add11add70de2e",
+      "chunks": [
+        "43-0.txt",
+        "43-1.txt",
+        "43-2.txt",
+        "43-3.txt"
+      ]
+    },
+    {
+      "path": "issue23-images.js",
+      "excluded": "possible credential, review required"
+    },
+    {
+      "path": "issue24-polish.js",
+      "bytes": 950,
+      "sha": "ca3b660e63c01cb23ab2b85863f32326dfc5042a",
+      "chunks": [
+        "45-0.txt"
+      ]
+    },
+    {
+      "path": "issue24-release.js",
+      "bytes": 15028,
+      "sha": "ad17e0ceecda3e301dcb69b42e914dec28f22bfc",
+      "chunks": [
+        "46-0.txt"
+      ]
+    },
+    {
+      "path": "langflow-build.js",
+      "bytes": 327,
+      "sha": "b7ad37a23090fd23d073617497543703c1e65a33",
+      "chunks": [
+        "47-0.txt"
+      ]
+    },
+    {
+      "path": "langflow-editorial.js",
+      "bytes": 9968,
+      "sha": "92662a594e9bebbe2696ad1ca8a9e7b7339d7420",
+      "chunks": [
+        "48-0.txt"
+      ]
+    },
+    {
+      "path": "lesson-compact.css",
+      "bytes": 8534,
+      "sha": "585b056207c296b3f7d0b015dc556e1fb00cc728",
+      "chunks": [
+        "49-0.txt"
+      ]
+    },
+    {
+      "path": "lesson-compact.js",
+      "bytes": 1522,
+      "sha": "9049518593eade84c6fe3d1e9847a87778aa03e4",
+      "chunks": [
+        "50-0.txt"
+      ]
+    },
+    {
+      "path": "licensed-fogg-replace.js",
+      "bytes": 3778,
+      "sha": "19f86da8be0fec24c56642c79163c1384716b0b4",
+      "chunks": [
+        "51-0.txt"
+      ]
+    },
+    {
+      "path": "licensed-fogg.css",
+      "bytes": 1028,
+      "sha": "76d62d8c4740f02a21ede674a1d9f76125be30aa",
+      "chunks": [
+        "52-0.txt"
+      ]
+    },
+    {
+      "path": "mime-fix.js",
+      "bytes": 2468,
+      "sha": "9899d93a4a3e96de7ec453b2f57d713deabe16dc",
+      "chunks": [
+        "53-0.txt"
+      ]
+    },
+    {
+      "path": "optical-glass-build.js",
+      "bytes": 156,
+      "sha": "63a6957b9d8542c1e04cdff3ac824e792389f3ea",
+      "chunks": [
+        "54-0.txt"
+      ]
+    },
+    {
+      "path": "optical-glass-v8.js",
+      "bytes": 4533,
+      "sha": "2dc973269a382cadf17935a09ef04e69dbf2174d",
+      "chunks": [
+        "55-0.txt"
+      ]
+    },
+    {
+      "path": "package.json",
+      "bytes": 104,
+      "sha": "6f5f7d11af932b665c86857ea21169f962bf35d9",
+      "chunks": [
+        "56-0.txt"
+      ]
+    },
+    {
+      "path": "patch-calendar.js",
+      "bytes": 8695,
+      "sha": "5bd99153df82365b35ba361a02a7f2102f9ade5c",
+      "chunks": [
+        "57-0.txt"
+      ]
+    },
+    {
+      "path": "patch-images-lesson.js",
+      "bytes": 7466,
+      "sha": "0f3d397e28edf6f6a8f290d22a93f4095e298697",
+      "chunks": [
+        "58-0.txt"
+      ]
+    },
+    {
+      "path": "photo-layout-build.js",
+      "bytes": 150,
+      "sha": "0f598970ec63ab2fe49de785e2e1127216f6240f",
+      "chunks": [
+        "59-0.txt"
+      ]
+    },
+    {
+      "path": "photo-layout-v5.js",
+      "bytes": 4476,
+      "sha": "8fda8e392c8579385c974a050f356a6e6a4c50e6",
+      "chunks": [
+        "60-0.txt"
+      ]
+    },
+    {
+      "path": "polish.js",
+      "bytes": 961,
+      "sha": "d5fa2565f62ab204e6ccf0f2adbb1e6391dece65",
+      "chunks": [
+        "61-0.txt"
+      ]
+    },
+    {
+      "path": "post-audit.js",
+      "bytes": 15618,
+      "sha": "feb781ed3ccd7939efc17199d9f0392dde077f2b",
+      "chunks": [
+        "62-0.txt"
+      ]
+    },
+    {
+      "path": "preflight22.js",
+      "bytes": 440,
+      "sha": "a237c81b4442af6affeb28148fea84601c19240e",
+      "chunks": [
+        "63-0.txt"
+      ]
+    },
+    {
+      "path": "radar-mini-runtime.js",
+      "bytes": 2157,
+      "sha": "33995f154732ec5cab5552e5843d5b582031bc21",
+      "chunks": [
+        "64-0.txt"
+      ]
+    },
+    {
+      "path": "radar-mini.css",
+      "bytes": 4928,
+      "sha": "aa57c201d7f7b381bda5c108e14a9b92ad14bc35",
+      "chunks": [
+        "65-0.txt"
+      ]
+    },
+    {
+      "path": "radar-mini.js",
+      "bytes": 2394,
+      "sha": "ed50682b4c00e3f26845b21deae3d66b706ce6fb",
+      "chunks": [
+        "66-0.txt"
+      ]
+    },
+    {
+      "path": "radar-photo-build.js",
+      "bytes": 156,
+      "sha": "b76f87dde5f0b21efc38216ff68ee79fe9a94bcd",
+      "chunks": [
+        "67-0.txt"
+      ]
+    },
+    {
+      "path": "radar-photo-v6.js",
+      "bytes": 4124,
+      "sha": "2140ae423de9d1f82fb65e68196a43d0417040af",
+      "chunks": [
+        "68-0.txt"
+      ]
+    },
+    {
+      "path": "restore-daily.js",
+      "bytes": 263,
+      "sha": "bbbc305bc6757d823bea6c0e9d5dba4d01e40b8e",
+      "chunks": [
+        "69-0.txt"
+      ]
+    },
+    {
+      "path": "rice-lesson.html",
+      "bytes": 3875,
+      "sha": "f91d081f8044de1c636ce06d9c028e84a115f593",
+      "chunks": [
+        "70-0.txt"
+      ]
+    },
+    {
+      "path": "site-polish.css",
+      "bytes": 6660,
+      "sha": "4720da3a1f01721654b49f53660df6b9da76a33e",
+      "chunks": [
+        "71-0.txt"
+      ]
+    },
+    {
+      "path": "src/archive/2026-11-17.html",
+      "bytes": 1486,
+      "sha": "80c282a14d2f555fb9dd850b70289648ad05f92e",
+      "chunks": [
+        "72-0.txt"
+      ]
+    },
+    {
+      "path": "src/archive/2026-11-18.html",
+      "bytes": 1486,
+      "sha": "c62904873c06752fbed837d48ffdcc20530892ff",
+      "chunks": [
+        "73-0.txt"
+      ]
+    },
+    {
+      "path": "src/archive/2026-11-19.html",
+      "bytes": 1506,
+      "sha": "2e9b23561547730d34857ae906b13da22e82f2ba",
+      "chunks": [
+        "74-0.txt"
+      ]
+    },
+    {
+      "path": "src/archive/2026-11-20.html",
+      "bytes": 91930,
+      "sha": "02fe16b012afb63b80c07d90777ef667ebf9efbe",
+      "chunks": [
+        "75-0.txt",
+        "75-1.txt",
+        "75-2.txt"
+      ]
+    },
+    {
+      "path": "src/index.html",
+      "bytes": 91930,
+      "sha": "02fe16b012afb63b80c07d90777ef667ebf9efbe",
+      "chunks": [
+        "76-0.txt",
+        "76-1.txt",
+        "76-2.txt"
+      ]
+    },
+    {
+      "path": "translate-fogg-zh.js",
+      "bytes": 3203,
+      "sha": "773da7fbce93629498802346b2d3050ae44ffaab",
+      "chunks": [
+        "77-0.txt"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+const cp=require('child_process');for(const s of ['glass-build.js','photo-layout-v5.js'])cp.execFileSync('node',[s],{stdio:'inherit',timeout:180000});

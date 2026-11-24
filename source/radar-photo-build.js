@@ -1,0 +1,1 @@
+const cp=require('child_process');for(const s of ['photo-layout-build.js','radar-photo-v6.js'])cp.execFileSync('node',[s],{stdio:'inherit',timeout:180000});

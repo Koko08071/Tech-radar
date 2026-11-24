@@ -1,0 +1,65 @@
+
+/* Daily lesson visual grammar — compact original vector remake of BJ Fogg Action Line */
+#academy .fogg-intro{display:flex;justify-content:space-between;align-items:flex-start;gap:28px;margin:3px 0 28px}
+#academy .fogg-intro-copy{min-width:0;flex:1}
+#academy .fogg-intro h3{font-size:clamp(29px,2.35vw,37px)!important;line-height:1.26;margin:0 0 16px!important;letter-spacing:-.035em}
+#academy .fogg-intro .rice-deck{max-width:58ch;font-size:17px;line-height:1.85;margin:0}
+#academy .fogg-formula{display:flex;flex-direction:column;align-items:flex-end;gap:8px;flex:none;padding-top:11px;color:#aee5fa;white-space:nowrap;font:750 22px/1.2 "Segoe UI",sans-serif;letter-spacing:.025em}
+#academy .fogg-formula small{font-size:10px;letter-spacing:.14em;color:#8daecb;font-weight:650}
+#academy .fogg-diagram{margin:0 0 35px;border:1px solid rgba(167,201,241,.15);border-radius:21px;padding:23px 26px 16px;background:linear-gradient(125deg,rgba(42,78,121,.20),rgba(15,34,60,.15));box-shadow:inset 0 1px rgba(255,255,255,.055);overflow:hidden}
+#academy .fogg-diagram-title{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:7px}
+#academy .fogg-diagram-title span{display:block;font-size:10.5px;letter-spacing:.13em;color:#98bedf;font-weight:760}
+#academy .fogg-diagram-title h4{font-size:20px!important;margin:5px 0 0!important;line-height:1.4;color:#edf6fe}
+#academy .fogg-diagram-title .fogg-figure-index{white-space:nowrap;letter-spacing:.11em;font-size:10px;color:#789ebd}
+#academy .fogg-diagram-layout{display:grid;grid-template-columns:minmax(0,1.62fr) minmax(232px,.83fr);gap:27px;align-items:center}
+#academy .fogg-diagram-graphic{min-width:0;position:relative}
+#academy .fogg-svg{width:100%;display:block;color:#d7e5f5;height:auto}
+#academy .fogg-svg-mobile{display:none}
+#academy .fogg-diagram-guide{display:flex;flex-direction:column;gap:18px;padding:14px 0}
+#academy .fogg-guide-item{display:grid;grid-template-columns:12px minmax(0,1fr);gap:11px;align-items:start}
+#academy .fogg-guide-dot{width:9px;height:9px;border-radius:50%;margin-top:8px}
+#academy .fogg-guide-dot.good{background:#6ce5ca;box-shadow:0 0 14px rgba(79,223,192,.34)}
+#academy .fogg-guide-dot.caution{background:#ffb891;box-shadow:0 0 14px rgba(252,171,126,.24)}
+#academy .fogg-guide-item strong{display:block;font-size:15.5px;line-height:1.5;color:#ecf5fd}
+#academy .fogg-guide-item p{font-size:14.5px;line-height:1.75;color:#b9cee4;margin:5px 0 0}
+#academy .fogg-guide-takeaway{border-left:2px solid rgba(146,184,246,.55);padding:9px 0 9px 14px;color:#bcd4ea;font-size:14.5px;line-height:1.78}
+#academy .fogg-guide-takeaway strong{color:#e4edff;font-weight:700}
+#academy .fogg-diagram figcaption{padding-top:11px;border-top:1px solid rgba(154,188,226,.12);font-size:12px;line-height:1.7;color:#95b0c9}
+#academy .fogg-diagram figcaption a{color:#afccf5;text-decoration:underline;text-decoration-color:rgba(165,208,247,.4);text-underline-offset:3px}
+body.light #academy .fogg-intro h3,body.light #academy .fogg-diagram-title h4{color:#1e3d59}
+body.light #academy .fogg-formula{color:#326e99}
+body.light #academy .fogg-formula small,body.light #academy .fogg-diagram-title span{color:#5d7c99}
+body.light #academy .fogg-diagram{background:linear-gradient(135deg,rgba(239,248,254,.86),rgba(246,250,254,.78));border-color:rgba(80,128,169,.17)}
+body.light #academy .fogg-svg{color:#526e88}
+body.light #academy .fogg-guide-item strong{color:#244661}
+body.light #academy .fogg-guide-item p{color:#4a657e}
+body.light #academy .fogg-guide-takeaway{color:#45637b}
+body.light #academy .fogg-guide-takeaway strong{color:#244861}
+body.light #academy .fogg-diagram figcaption{color:#667f99;border-top-color:rgba(76,125,171,.15)}
+body.light #academy .fogg-diagram figcaption a{color:#336a9c}
+@media(max-width:1060px){
+ #academy .fogg-diagram-layout{grid-template-columns:minmax(0,1.3fr) minmax(190px,.78fr);gap:18px}
+ #academy .fogg-diagram{padding:18px 20px 14px}
+ #academy .fogg-guide-item p{font-size:14px}
+}
+@media(max-width:760px){
+ #academy .fogg-intro{flex-direction:column;gap:7px;margin-bottom:22px}
+ #academy .fogg-formula{align-items:flex-start;font-size:19px;padding-top:0}
+ #academy .fogg-formula small{font-size:9.5px}
+ #academy .fogg-diagram-layout{grid-template-columns:1fr;gap:5px}
+ #academy .fogg-diagram-graphic{max-width:590px;width:100%;margin:auto}
+ #academy .fogg-diagram-guide{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:9px 0}
+ #academy .fogg-guide-takeaway{grid-column:1/-1}
+}
+@media(max-width:500px){
+ #academy .fogg-diagram{padding:16px 12px 13px;border-radius:16px}
+ #academy .fogg-diagram-title{padding:0 5px 7px}
+ #academy .fogg-diagram-title h4{font-size:18px!important}
+ #academy .fogg-diagram-title .fogg-figure-index{display:none}
+ #academy .fogg-svg-desktop{display:none}
+ #academy .fogg-svg-mobile{display:block}
+ #academy .fogg-diagram-guide{grid-template-columns:1fr;gap:12px;padding:5px 6px}
+ #academy .fogg-guide-item p{font-size:14.5px}
+ #academy .fogg-guide-takeaway{grid-column:auto}
+ #academy .fogg-diagram figcaption{padding:10px 5px 0}
+}

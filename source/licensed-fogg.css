@@ -1,0 +1,9 @@
+
+/* Published, non-AI Commons illustration: Goodmanguy 2017, CC BY-SA 4.0. */
+#academy .fogg-authentic-graphic{display:flex;align-items:center;justify-content:center;flex-direction:column;min-width:0;padding:clamp(7px,1.4vw,17px);background:#fff;border:1px solid rgba(102,132,171,.23);border-radius:16px;overflow:hidden}
+#academy .fogg-authentic-graphic .fogg-published-image{display:block;width:100%;height:auto;object-fit:contain;object-position:center;background:#fff;border:0;box-shadow:none}
+#academy .fogg-authentic-graphic .fogg-authentic-fallback:not([hidden]){display:block;line-height:1.8;padding:32px 8px;text-align:center;font-size:13px;color:#2d5473}
+#academy .fogg-diagram figcaption{font-size:12.5px;line-height:1.75}
+#academy .fogg-diagram figcaption a{margin:0 2px;text-decoration:underline;text-underline-offset:3px}
+body.light #academy .fogg-authentic-graphic{background:#fff;box-shadow:0 6px 20px rgba(50,83,115,.06)}
+@media(max-width:720px){#academy .fogg-authentic-graphic{padding:6px;border-radius:12px}}

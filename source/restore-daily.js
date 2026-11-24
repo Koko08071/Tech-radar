@@ -1,0 +1,1 @@
+const fs=require('fs');const z=require('zlib');const b=Buffer.from(fs.readFileSync('daily.br.b64','utf8'),'base64');const h=z.brotliDecompressSync(b);fs.mkdirSync('src',{recursive:true});fs.writeFileSync('src/index.html',h);console.log('Restored daily',h.length);

@@ -1,0 +1,16 @@
+"use strict";
+const fs=require("fs");
+const p="daily-photo-patch.js";
+let s=fs.readFileSync(p,"utf8");
+const needle="runtime.replace(/";
+const start=s.indexOf(needle);
+const end=s.indexOf(",JSON.stringify(photos))",start);
+if(start<0||end<0)throw new Error("Photo patch repair target missing");
+const broken=s.slice(start+needle.length,end);
+const data=broken.replace(/\/g$/,"");
+if(!data.startsWith("[{")||!Array.isArray(JSON.parse(data)))throw new Error("Photo catalogue not found");
+s=s.slice(0,start)+"runtime.replace(/__PHOTOS__/g"+s.slice(end);
+if(!s.includes("const photos = __PHOTOS__;"))throw new Error("Catalog placeholder not found");
+s=s.replace("const photos = __PHOTOS__;","const photos = "+data+";");
+fs.writeFileSync(p,s,"utf8");
+console.log("DAILY PHOTO PATCH REPAIRED ("+JSON.parse(data).length+" original photographs)");

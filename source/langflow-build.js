@@ -1,0 +1,1 @@
+const cp=require('child_process');for(const s of ['full-build.js','licensed-fogg-replace.js','translate-fogg-zh.js','issue23-apply.js','issue23-images.js','fix-photo-script.js','daily-photo-patch.js','issue24-release.js','issue24-polish.js','langflow-editorial.js'])cp.execFileSync('node',[s],{stdio:'inherit',timeout:180000});
