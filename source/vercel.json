@@ -1,1 +1,1 @@
-{"version":2,"buildCommand":"node clear-glass-build.js","outputDirectory":"src","framework":null}
+{"version":2,"buildCommand":"node tech-background-build.js","outputDirectory":"src","framework":null}
