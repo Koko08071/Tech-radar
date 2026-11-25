@@ -1,1 +1,1 @@
-{"version":2,"buildCommand":"node nov25-build.js","outputDirectory":"src","framework":null}
+{"version":2,"buildCommand":"node nov25-visual-build.js","outputDirectory":"src","framework":null}

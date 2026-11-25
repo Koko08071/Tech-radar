@@ -1,0 +1,1 @@
+const cp=require('child_process');for(const s of ['nov25-image-build.js','nov25-oceanlake-visual.js'])cp.execFileSync('node',[s],{stdio:'inherit',timeout:240000});
