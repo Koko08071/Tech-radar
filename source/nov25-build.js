@@ -1,0 +1,1 @@
+const cp=require('child_process');for(const s of ['tech-background-build.js','nov25-release.js'])cp.execFileSync('node',[s],{stdio:'inherit',timeout:240000});

@@ -113,5 +113,5 @@
   "snapshot": "site/index.html",
   "archive": "site/archive/2026-11-24.html",
   "buildEntry": "nov25-build.js",
-  "note": "Production HTML and current data are synced. Original build scripts are preserved on Vercel; historical build chain is not guaranteed to rebuild from this repository."
+  "note": "Production HTML, current data and current release build scripts synced. Historical build chain is not guaranteed to rebuild from this repository."
 }
