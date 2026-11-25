@@ -14,13 +14,13 @@
 
 **首页 · 冷电蓝玻璃与科技光影**
 
-[![科技新品雷达首页](docs/screenshots/homepage-2026-11-24-abeda1f.webp)](https://tech-radar-daily.vercel.app/)
+[![科技新品雷达首页](docs/screenshots/homepage-2026-11-25-6f575c1.webp)](https://tech-radar-daily.vercel.app/)
 
 **新品与趋势 · 产品卡片与真实产品配图**
 
-[![产品展示](docs/screenshots/product-detail-2026-11-24-7397883.webp)](https://tech-radar-daily.vercel.app/#radar)
+[![产品展示](docs/screenshots/product-detail-2026-11-25-98220fe.webp)](https://tech-radar-daily.vercel.app/#radar)
 
-当前背景：[Magda Ehlers · Blue light panels（Pexels）](https://www.pexels.com/photo/abstract-blue-light-panels-ceiling-installation-35139106/)，2026-11-24 正式站已采用。
+当前背景：[panumas nikhomkhai · 数据中心摄影（Pexels）](https://www.pexels.com/photo/computer-server-in-data-center-room-17489156/)，2026-11-25 正式站已采用。
 
 ## 界面与功能
 
@@ -39,9 +39,9 @@
 ```text
 Tech-radar/
 ├── README.md
-├── site/                    # 2026-11-24 生产页面快照
+├── site/                    # 2026-11-25 生产页面快照
 │   ├── index.html           # 当日首页
-│   ├── archive/             # 11 月 17–23 日历史日报
+│   ├── archive/             # 11 月 17–24 日历史日报
 │   ├── calendar-lunar.js    # 日历依赖
 │   └── *.css / *.js         # 样式和交互依赖
 ├── source/                  # Vercel 原始构建源码备份
