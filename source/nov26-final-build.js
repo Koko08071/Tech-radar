@@ -1,0 +1,1 @@
+const cp=require('child_process');for(const s of ['nov25-visual-build.js','nov26-final-release.js'])cp.execFileSync('node',[s],{stdio:'inherit',timeout:300000});

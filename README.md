@@ -14,13 +14,13 @@
 
 **首页 · 冷电蓝玻璃与科技光影**
 
-[![科技新品雷达首页](docs/screenshots/homepage-2026-11-25-de61b38.webp)](https://tech-radar-daily.vercel.app/)
+[![科技新品雷达首页](docs/screenshots/homepage-2026-11-26-2bd7619.webp)](https://tech-radar-daily.vercel.app/)
 
 **新品与趋势 · 产品卡片与真实产品配图**
 
-[![产品展示](docs/screenshots/product-detail-2026-11-25-5594da9.webp)](https://tech-radar-daily.vercel.app/#radar)
+[![产品展示](docs/screenshots/product-detail-2026-11-26-bb50094.webp)](https://tech-radar-daily.vercel.app/#radar)
 
-当前背景：[panumas nikhomkhai · 数据中心摄影（Pexels）](https://www.pexels.com/photo/computer-server-in-data-center-room-17489156/)，2026-11-25 正式站已采用。
+当前背景：[Brett Sayles · 网络设备摄影（Pexels）](https://www.pexels.com/photo/plastic-connectors-in-electronic-switch-on-server-4657256/)，2026-11-26 正式站已采用。
 
 ## 界面与功能
 
@@ -32,16 +32,16 @@
 | Product Thinking | 每日产品方法与案例 |
 | 历史日报 | 日期归档与中文日历 |
 
-视觉设计采用冷电蓝透明玻璃、顶部渐隐高光、半透明胶囊和每日高清科技风摄影与授权设计素材；产品主图完整展示，搭配同源模糊背景。2026-11-25 修复全部当期图片为正式站同域资源，并逐张进行浏览器解码与可见性验收；图片来源见 [当期配图清单](site/assets/2026-11-25-image-sources.json)。公开仓库仅保留出处及线上资源链接，第三方原图未重复上传。支持深浅色主题与响应式布局。
+视觉设计采用冷电蓝透明玻璃、顶部渐隐高光、半透明胶囊和每日高清科技风摄影与授权设计素材；产品主图完整展示，搭配同源模糊背景。2026-11-26 使用新版冷蓝科幻标题，移除句号；当期内容图片已使用正式站同域资源并通过浏览器解码检查，图片来源见 [当期配图清单](site/assets/2026-11-26-image-sources.json)。公开仓库仅保留出处及线上资源链接，第三方原图未重复上传。支持深浅色主题与响应式布局。
 
 ## 项目结构
 
 ```text
 Tech-radar/
 ├── README.md
-├── site/                    # 2026-11-25 生产页面快照
+├── site/                    # 2026-11-26 生产页面快照
 │   ├── index.html           # 当日首页
-│   ├── archive/             # 11 月 17–24 日历史日报
+│   ├── archive/             # 11 月 17–25 日历史日报
 │   ├── calendar-lunar.js    # 日历依赖
 │   └── *.css / *.js         # 样式和交互依赖
 ├── source/                  # Vercel 原始构建源码备份
