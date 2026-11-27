@@ -1,5 +1,5 @@
 {
-  "deployment": "dpl_73mWzaApw9SdUwfdyiQsYAfHRCUj",
+  "deployment": "dpl_BaPx61qJrFPyZsk6fprQvMXFRJjQ",
   "files": [
     {
       "path": "adjacent-month.js",
@@ -492,21 +492,18 @@
     },
     {
       "path": "nov27-final-build.js",
-      "bytes": 186,
-      "sha": "9e6f20d909e1203a82e4e721ab722c5ba4afad85",
-      "chunks": []
+      "sha": "8abae9d54dee09b9306497b585a718f4ea6608d7",
+      "source": "source/nov27-final-build.js"
     },
     {
       "path": "nov27-final-release.js",
-      "bytes": 5512,
-      "sha": "2b439944b5f70bd9fb24014b312e314cfa3a267c",
-      "chunks": []
+      "sha": "c1fbd664127577b33016bbe2f6536c192bad53da",
+      "source": "Vercel production source; historical export chunks not reused"
     },
     {
       "path": "nov27-final.html",
-      "bytes": 191547,
-      "sha": "7741dab03cf0f1b4bd8b8cd2ea83d3f51022c489",
-      "chunks": []
+      "sha": "6b3a63b4351323deb363c1d245aa9c472b490d87",
+      "source": "Vercel production source; historical export chunks not reused"
     },
     {
       "path": "optical-glass-build.js",
