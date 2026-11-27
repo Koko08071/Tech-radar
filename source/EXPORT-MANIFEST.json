@@ -1,5 +1,5 @@
 {
-  "deployment": "dpl_Fzwf2F41Ej74yCBpBXF5dJTru61Z",
+  "deployment": "dpl_73mWzaApw9SdUwfdyiQsYAfHRCUj",
   "files": [
     {
       "path": "adjacent-month.js",
@@ -505,7 +505,7 @@
     {
       "path": "nov27-final.html",
       "bytes": 191547,
-      "sha": "3b6e8b73dd6ba883b33bbf7f1688924a336b4bd4",
+      "sha": "7741dab03cf0f1b4bd8b8cd2ea83d3f51022c489",
       "chunks": []
     },
     {
