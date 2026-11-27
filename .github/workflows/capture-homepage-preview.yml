@@ -62,4 +62,16 @@ jobs:
           git commit -m "Update animated homepage preview"
           git fetch origin main
           git rebase origin/main
+          preview_commit="$(git rev-parse HEAD)"
+          PREVIEW_COMMIT="$preview_commit" node - <<'NODE'
+          const fs = require('node:fs');
+          const filename = 'README.md';
+          const url = 'https://raw.githubusercontent.com/Koko08071/Tech-radar/' + process.env.PREVIEW_COMMIT + '/docs/homepage-preview.gif';
+          const old = fs.readFileSync(filename, 'utf8');
+          const updated = old.replace(/(\[!\[[^\n]*?\]\()(?:(?:https:\/\/raw\.githubusercontent\.com\/Koko08071\/Tech-radar\/[^/]+\/)?docs\/homepage-preview\.gif)(\)\]\()/, (_, a, b) => a + url + b);
+          if (updated === old) throw new Error('README preview reference not found');
+          fs.writeFileSync(filename, updated);
+          NODE
+          git add README.md
+          git commit -m "Refresh versioned README preview reference"
           git push origin HEAD:main
