@@ -1,0 +1,62 @@
+name: Refresh animated homepage preview
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "source/nov27-final.html"
+      - "source/nov27-final-build.js"
+      - "site/index.html"
+      - "scripts/capture-homepage-preview.cjs"
+      - ".github/workflows/capture-homepage-preview.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: homepage-preview
+  cancel-in-progress: true
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install media tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg gifsicle
+
+      - name: Install Playwright and Chromium
+        run: |
+          mkdir -p /tmp/radar-preview
+          npm install --prefix /tmp/radar-preview playwright
+          cd /tmp/radar-preview
+          npx playwright install --with-deps chromium
+
+      - name: Record and render homepage GIF
+        run: NODE_PATH=/tmp/radar-preview/node_modules node scripts/capture-homepage-preview.cjs
+
+      - name: Commit updated preview
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/homepage-preview.gif
+          if git diff --cached --quiet; then
+            echo "Homepage preview is already up to date."
+            exit 0
+          fi
+          git commit -m "Update animated homepage preview"
+          git push origin HEAD:main
