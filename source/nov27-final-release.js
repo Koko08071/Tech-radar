@@ -14,10 +14,10 @@ const ipAsset=assets.find(a=>a.path==='/assets/2026-11-27-iplay80h.jpg');
 for(const pageUrl of ['https://www.alldocube.com/jp/products/iplay80h/','https://www.51cube.com/products/iplay80h/']){
  try{
   const page=cp.execFileSync('curl',['-fLsS','--connect-timeout','4','--max-time','10','-A','Mozilla/5.0','-e',new URL(pageUrl).origin+'/',pageUrl],{encoding:'utf8',maxBuffer:8*1024*1024});
-  const tags=[...page.matchAll(/<img\\b[^>]*>/gi)].map(m=>m[0]);
-  const candidates=tags.map(tag=>{const src=(tag.match(/\\b(?:src|data-src|data-lazy-src|data-original)=["']([^"']+)["']/i)||[])[1];const alt=(tag.match(/\\balt=["']([^"']*)["']/i)||[])[1]||'';return{src,alt};}).filter(x=>x.src&&!/^data:/i.test(x.src));
+  const tags=[...page.matchAll(/<img\b[^>]*>/gi)].map(m=>m[0]);
+  const candidates=tags.map(tag=>{const src=(tag.match(/\b(?:src|data-src|data-lazy-src|data-original)=["']([^"']+)["']/i)||[])[1];const alt=(tag.match(/\balt=["']([^"']*)["']/i)||[])[1]||'';return{src,alt};}).filter(x=>x.src&&!/^data:/i.test(x.src));
   let chosen=candidates.find(x=>/iplay.?80h/i.test(x.alt+' '+x.src))?.src;
-  if(!chosen){const metas=[...page.matchAll(/<meta\\b[^>]*>/gi)].map(m=>m[0]);for(const tag of metas){if(/og:image|twitter:image/i.test(tag)){const c=(tag.match(/\\bcontent=["']([^"']+)["']/i)||[])[1];if(c){chosen=c;break;}}}}
+  if(!chosen){const metas=[...page.matchAll(/<meta\b[^>]*>/gi)].map(m=>m[0]);for(const tag of metas){if(/og:image|twitter:image/i.test(tag)){const c=(tag.match(/\bcontent=["']([^"']+)["']/i)||[])[1];if(c){chosen=c;break;}}}}
   if(chosen){ipAsset.original=new URL(chosen,pageUrl).href;ipAsset.referer=pageUrl;ipAsset.credit='ALLDOCUBE official product page';ipAsset.scrapedFrom=pageUrl;console.log('IPLAY_OFFICIAL_IMAGE '+ipAsset.original);break;}
   console.log('IPLAY_PAGE_NO_IMAGE '+pageUrl);
  }catch(e){console.log('IPLAY_PAGE_FETCH_MISS '+pageUrl);}
