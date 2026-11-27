@@ -5,9 +5,10 @@ on:
     branches: [main]
     paths:
       - "README.md"
-      - "source/nov27-final.html"
-      - "source/nov27-final-build.js"
-      - "site/index.html"
+      - "source/**"
+      - "site/**"
+      - "assets/**"
+      - "vercel.json"
       - "scripts/capture-homepage-preview.cjs"
       - ".github/workflows/capture-homepage-preview.yml"
   workflow_dispatch:
