@@ -25,12 +25,12 @@ const FINAL_GIF = path.join(DOCS, "homepage-preview.gif");
     recordVideo: { dir: TMP, size: { width: 1600, height: 900 } }
   });
 
-  const pageStartedAt = Date.now();
   const page = await context.newPage();
+  const pageStartedAt = Date.now();
   const errors = [];
   page.on("pageerror", error => errors.push(error.message));
 
-  const response = await page.goto("https://tech-radar-daily.vercel.app/", {
+  const response = await page.goto("https://tech-radar-daily.vercel.app/?preview=" + Date.now(), {
     waitUntil: "domcontentloaded",
     timeout: 90000
   });
@@ -42,12 +42,13 @@ const FINAL_GIF = path.join(DOCS, "homepage-preview.gif");
   await page.waitForFunction(() => {
     const video = document.querySelector("#radar-background-video");
     return video && video.readyState >= 3 && !video.paused;
-  }, { timeout: 90000 });
+  }, null, { timeout: 90000 });
 
   await page.waitForFunction(() => {
-    return document.querySelector("#home .hero-copy .metrics .metrics-heading")
+    return document.querySelector("#home .radar-cinematic-title")
+      && document.querySelectorAll("#home .hero-copy .metrics .metric strong").length === 3
       && document.querySelectorAll("#home .lf-ecosystem .radar-tag-window").length >= 2;
-  }, { timeout: 30000 });
+  }, null, { timeout: 30000 });
 
   await page.waitForTimeout(1500);
   await page.addStyleTag({
@@ -72,12 +73,12 @@ const FINAL_GIF = path.join(DOCS, "homepage-preview.gif");
     "-hide_banner", "-loglevel", "error", "-y",
     "-ss", trimStart.toFixed(2), "-t", "7", "-i", rawVideo,
     "-filter_complex",
-    "[0:v]fps=8,scale=1280:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=80:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer:bayer_scale=5:diff_mode=rectangle",
+    "[0:v]fps=12,scale=1440:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=256:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer:bayer_scale=3:diff_mode=rectangle",
     "-loop", "0", paletteGif
   ], { stdio: "inherit" });
 
   execFileSync("gifsicle", [
-    "-O3", "--lossy=80", paletteGif, "-o", optimizedGif
+    "-O3", "--lossy=20", paletteGif, "-o", optimizedGif
   ], { stdio: "inherit" });
 
   fs.copyFileSync(optimizedGif, FINAL_GIF);
@@ -90,8 +91,8 @@ const FINAL_GIF = path.join(DOCS, "homepage-preview.gif");
   console.log(JSON.stringify({
     status: response.status(),
     durationSeconds: 7,
-    resolution: "1280x720",
-    fps: 8,
+    resolution: "1440x810",
+    fps: 12,
     sizeBytes: size,
     pageErrors: errors
   }, null, 2));
