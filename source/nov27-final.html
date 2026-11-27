@@ -1138,7 +1138,18 @@ body.light .issue27-metrics strong{color:#2365a5}
 #products .product .visual img[src*="2026-11-27-engineai"]{object-fit:cover!important;object-position:center 28%!important;background:#f3f5f7}
 #products .product .visual.image-loaded .visual-fallback{display:none!important}
 @media(max-width:760px){#academy .issue27-section-head{min-height:145px;padding:21px 18px;margin-bottom:16px;border-radius:16px;background-position:58% center}#academy .issue27-section-head>p{font-size:11px;gap:6px}#academy .issue27-cover-note{font-size:9px}}
-</style></head><body><div class="scene"></div><header class="top"><div class="wrap nav"><a class="brand" href="#home"><b>✧</b>科技新品雷达</a><nav class="links"><a href="#try">现在就试</a><a href="#radar">新品与趋势</a><a href="#insight">Tech Insights</a><a href="#academy">Product Thinking</a><a href="#archive">历史日报</a></nav><div class="calendar-wrap" id="calendar-wrap"><button aria-controls="china-calendar" aria-expanded="false" aria-label="打开中国日历与节假日安排" class="clock" id="calendar-toggle" title="点击查看中国日历 · 放假及调休安排" type="button"><span class="clock-date" id="date">2026.11.27 · 周五</span><time id="time">12:09:00</time><span aria-hidden="true" class="cal-caret">⌄</span></button>
+</style><style id="radar-video-background-v1">
+html body .scene,html body.light.editorial-refresh .scene{transform:none!important;overflow:hidden!important;pointer-events:none!important}
+.scene .radar-bg-video{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;transition:opacity .65s ease;pointer-events:none}
+.scene.radar-video-playing .radar-bg-video{opacity:1}
+html body .scene.radar-video-playing::after{z-index:1;background:linear-gradient(90deg,rgba(4,13,27,.65),rgba(5,13,26,.39) 55%,rgba(5,12,24,.22)),linear-gradient(180deg,rgba(4,12,24,.16),rgba(4,12,24,.32))!important}
+html body.light .scene.radar-video-playing::after,html body.light.editorial-refresh .scene.radar-video-playing::after{background:linear-gradient(90deg,rgba(12,30,47,.60),rgba(16,34,51,.35) 50%,rgba(20,40,57,.09) 100%)!important}
+.radar-motion-control{position:fixed;right:20px;bottom:20px;z-index:25;display:flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid rgba(160,201,243,.45);border-radius:999px;background:rgba(13,30,49,.72);color:#e8f4ff;font:600 12px/1.5 inherit;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);cursor:pointer;box-shadow:0 4px 18px rgba(3,15,32,.14)}
+body.light .radar-motion-control{background:rgba(244,250,255,.87);color:#23435e;border-color:rgba(255,255,255,.8)}
+.radar-motion-control[hidden]{display:none!important}.radar-motion-control:focus-visible{outline:2px solid #88c9ff;outline-offset:3px}
+@media(max-width:760px){.radar-motion-control{right:12px;bottom:12px;padding:7px 11px}html body .scene.radar-video-playing::after{background:linear-gradient(180deg,rgba(4,13,27,.65),rgba(4,13,27,.40))!important}html body.light .scene.radar-video-playing::after{background:linear-gradient(180deg,rgba(12,30,47,.62),rgba(14,32,50,.29))!important}}
+@media(prefers-reduced-motion:reduce){.scene .radar-bg-video{transition:none}}
+</style></head><body><div class="scene"><video id="radar-background-video" class="radar-bg-video" muted loop playsinline preload="none" aria-hidden="true" data-src="/assets/2026-11-27-background-robotics.mp4"></video></div><header class="top"><div class="wrap nav"><a class="brand" href="#home"><b>✧</b>科技新品雷达</a><nav class="links"><a href="#try">现在就试</a><a href="#radar">新品与趋势</a><a href="#insight">Tech Insights</a><a href="#academy">Product Thinking</a><a href="#archive">历史日报</a></nav><div class="calendar-wrap" id="calendar-wrap"><button aria-controls="china-calendar" aria-expanded="false" aria-label="打开中国日历与节假日安排" class="clock" id="calendar-toggle" title="点击查看中国日历 · 放假及调休安排" type="button"><span class="clock-date" id="date">2026.11.27 · 周五</span><time id="time">12:09:00</time><span aria-hidden="true" class="cal-caret">⌄</span></button>
 <div aria-label="中国农历及国家节假日" class="china-calendar" hidden="" id="china-calendar" role="dialog">
 <div class="cal-top"><button aria-label="关闭日历" class="cal-close" id="cal-close" type="button">×</button></div>
 <div aria-label="日历查看方式" class="cal-tabs" role="tablist"><button aria-selected="true" class="cal-tab active" data-cal-view="month" role="tab" type="button">月历</button><button aria-selected="false" class="cal-tab" data-cal-view="schedule" role="tab" type="button">放假安排</button></div>
@@ -1600,4 +1611,22 @@ function sync(){
 }
 sync();
 new MutationObserver(sync).observe(root,{childList:true,subtree:true,attributes:true,attributeFilter:["src"]});
+})();</script><script id="radar-video-runtime-v1">(function(){
+"use strict";
+var v=document.getElementById("radar-background-video"),scene=v&&v.parentElement;if(!v||!scene)return;
+var btn=document.createElement("button");btn.className="radar-motion-control";btn.type="button";btn.hidden=true;btn.setAttribute("aria-pressed","false");btn.title="背景视频：Engin Altundağ / Pexels";
+document.body.appendChild(btn);
+var media=window.matchMedia("(prefers-reduced-motion: reduce)"),saved=false;try{saved=localStorage.getItem("radar-motion")==="off"}catch(e){}
+var wanted=!saved&&!media.matches&&!(navigator.connection&&navigator.connection.saveData);
+v.muted=true;v.defaultMuted=true;v.loop=true;v.playsInline=true;
+function label(){btn.textContent=wanted?"Ⅱ 暂停背景":"▶ 播放背景";btn.setAttribute("aria-pressed",String(!wanted));}
+function start(){if(!wanted||document.hidden)return;if(!v.getAttribute("src")){v.src=v.dataset.src;v.preload="auto"}var p=v.play();if(p&&p.catch)p.catch(function(){scene.classList.remove("radar-video-playing");wanted=false;label()})}
+function stop(){v.pause();scene.classList.remove("radar-video-playing")}
+v.addEventListener("playing",function(){scene.classList.add("radar-video-playing");btn.hidden=false});
+v.addEventListener("error",function(){scene.classList.remove("radar-video-playing");wanted=false;label();btn.hidden=true});
+btn.addEventListener("click",function(){wanted=!wanted;try{localStorage.setItem("radar-motion",wanted?"on":"off")}catch(e){}label();if(wanted)start();else stop()});
+document.addEventListener("visibilitychange",function(){if(document.hidden)stop();else start()});
+function motionChange(){if(media.matches){wanted=false;stop();label()}}
+if(media.addEventListener)media.addEventListener("change",motionChange);else if(media.addListener)media.addListener(motionChange);
+label();btn.hidden=false;if(wanted){if("requestIdleCallback"in window)requestIdleCallback(start,{timeout:900});else setTimeout(start,100)}
 })();</script></body></html>
