@@ -45,7 +45,8 @@ const FINAL_GIF = path.join(DOCS, "homepage-preview.gif");
   }, null, { timeout: 90000 });
 
   await page.waitForFunction(() => {
-    return document.querySelector("#home .radar-cinematic-title")
+    return document.querySelector("#radar-nav-editorial-v1")
+      && document.querySelector("#home .radar-cinematic-title")
       && document.querySelectorAll("#home .hero-copy .metrics .metric strong").length === 3
       && document.querySelectorAll("#home .lf-ecosystem .radar-tag-window").length >= 2;
   }, null, { timeout: 30000 });
@@ -66,34 +67,40 @@ const FINAL_GIF = path.join(DOCS, "homepage-preview.gif");
   await video.saveAs(rawVideo);
   await browser.close();
 
+  // Try high-resolution GIF first, then reduce palette/bitrate before reducing dimensions.
+  const budget = 25 * 1024 * 1024;
+  const variants = [
+    { width: 1440, fps: 12, colors: 128, lossy: 65 },
+    { width: 1440, fps: 10, colors: 96, lossy: 85 },
+    { width: 1280, fps: 10, colors: 96, lossy: 85 },
+    { width: 1280, fps: 8, colors: 80, lossy: 100 },
+    { width: 1120, fps: 8, colors: 64, lossy: 120 }
+  ];
   const paletteGif = path.join(TMP, "homepage-palette.gif");
   const optimizedGif = path.join(TMP, "homepage-optimized.gif");
-
-  execFileSync("ffmpeg", [
-    "-hide_banner", "-loglevel", "error", "-y",
-    "-ss", trimStart.toFixed(2), "-t", "7", "-i", rawVideo,
-    "-filter_complex",
-    "[0:v]fps=12,scale=1440:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=256:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer:bayer_scale=3:diff_mode=rectangle",
-    "-loop", "0", paletteGif
-  ], { stdio: "inherit" });
-
-  execFileSync("gifsicle", [
-    "-O3", "--lossy=20", paletteGif, "-o", optimizedGif
-  ], { stdio: "inherit" });
-
-  fs.copyFileSync(optimizedGif, FINAL_GIF);
-  const size = fs.statSync(FINAL_GIF).size;
-
-  if (size > 25 * 1024 * 1024) {
-    throw new Error("Animated preview exceeded the 25 MB repository budget.");
+  let chosen = null;
+  for (const v of variants) {
+    execFileSync("ffmpeg", [
+      "-hide_banner", "-loglevel", "error", "-y",
+      "-ss", trimStart.toFixed(2), "-t", "7", "-i", rawVideo,
+      "-filter_complex",
+      `[0:v]fps=${v.fps},scale=${v.width}:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=${v.colors}:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer:bayer_scale=4:diff_mode=rectangle`,
+      "-loop", "0", paletteGif
+    ], { stdio: "inherit" });
+    execFileSync("gifsicle", ["-O3", `--lossy=${v.lossy}`, paletteGif, "-o", optimizedGif], { stdio: "inherit" });
+    const size = fs.statSync(optimizedGif).size;
+    console.log(JSON.stringify({ ...v, sizeBytes: size }));
+    if (size <= budget) { chosen = { ...v, sizeBytes: size }; break; }
   }
-
+  if (!chosen) throw new Error("All animated preview encoding profiles exceeded the repository budget.");
+  fs.copyFileSync(optimizedGif, FINAL_GIF);
   console.log(JSON.stringify({
     status: response.status(),
     durationSeconds: 7,
-    resolution: "1440x810",
-    fps: 12,
-    sizeBytes: size,
+    resolution: chosen.width + "x" + Math.round(chosen.width * 9 / 16),
+    fps: chosen.fps,
+    colors: chosen.colors,
+    sizeBytes: chosen.sizeBytes,
     pageErrors: errors
   }, null, 2));
 
