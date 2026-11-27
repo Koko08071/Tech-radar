@@ -15,6 +15,6 @@ for(const a of assets){let ok=false;for(const ref of [a.referer,null]){try{const
 let h=fs.readFileSync('nov27-final.html','utf8');for(const a of assets)if(a.remoteFallback)h=h.replaceAll(a.path,a.original);if(!h.includes('DAILY ISSUE · 2026.11.27 · FRIDAY')||!h.includes('id="issue27-service-blueprint"')||!h.includes('2026-11-27-background-robotics.jpg'))throw Error('Issue 27 content validation failed');
 const scriptMatches=[...h.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)];for(const m of scriptMatches)if(m[1].trim())new vm.Script(m[1]);
 const itemMatch=scriptMatches.map(m=>m[1]).find(s=>s.includes('const items='));const parsed=JSON.parse(itemMatch.match(/const items=(\[[\s\S]*?\]);const esc=/)[1]);if(parsed.length!==6)throw Error('Expected six news items');if(!h.includes('OpenSCAD')||!h.includes('n8n')||!h.includes('SERVICE BLUEPRINT'))throw Error('Required daily modules missing');
-fs.copyFileSync('nov27-final.html','src/index.html');fs.copyFileSync('nov26-final.html','src/archive/2026-11-26.html');
+fs.writeFileSync('src/index.html',h);fs.copyFileSync('nov26-final.html','src/archive/2026-11-26.html');
 fs.writeFileSync('src/assets/2026-11-27-image-sources.json',JSON.stringify(assets,null,2));
 console.log('NOV27 READY: six current items, two new tools, three insights, service blueprint, prior-day archive');
