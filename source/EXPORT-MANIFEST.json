@@ -1,5 +1,5 @@
 {
-  "deployment": "dpl_FQLT5ExXSwrgZVKMjAXspzkdzFP3",
+  "deployment": "dpl_CXzbX3jzneMbyATddHr44p3zPzi6",
   "files": [
     {
       "path": "adjacent-month.js",
@@ -492,7 +492,7 @@
     },
     {
       "path": "nov27-final-build.js",
-      "sha": "c03ca38698e017c4d594ddcf83167a20fd5df2f2",
+      "sha": "f92456b75dce9a2807da656c674e103da1818ddd",
       "source": "source/nov27-final-build.js"
     },
     {
@@ -502,12 +502,12 @@
     },
     {
       "path": "nov27-final.html",
-      "sha": "68f1153f1492f8dc017be68f04f30bb9e64a438b",
+      "sha": "3f3d84d81cb985b4faa12a4d585e3890523ee2d2",
       "source": "source/nov27-final.html"
     },
     {
       "path": "src/index.html",
-      "sha": "68f1153f1492f8dc017be68f04f30bb9e64a438b",
+      "sha": "3f3d84d81cb985b4faa12a4d585e3890523ee2d2",
       "source": "site/index.html"
     },
     {
