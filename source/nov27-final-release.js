@@ -10,6 +10,18 @@ const assets=[
 {path:'/assets/2026-11-27-openscad.png',original:'https://dl.flathub.org/media/org/openscad/OpenSCAD/eafb5ebab7b4a4abb0a8aa8e1b8524c5/screenshots/image-2_orig.png',referer:'https://flathub.org/',credit:'Flathub screenshot'},
 {path:'/assets/2026-11-27-n8n.jpg',original:'https://europe1.discourse-cdn.com/n8n/original/3X/e/b/eb0f022e2e0b22a3110c3af9c21f47e7d5429a73.jpeg',referer:'https://community.n8n.io/',credit:'n8n Community screenshot'}
 ];
+const ipAsset=assets.find(a=>a.path==='/assets/2026-11-27-iplay80h.jpg');
+for(const pageUrl of ['https://www.alldocube.com/jp/products/iplay80h/','https://www.51cube.com/products/iplay80h/']){
+ try{
+  const page=cp.execFileSync('curl',['-fLsS','--connect-timeout','4','--max-time','10','-A','Mozilla/5.0','-e',new URL(pageUrl).origin+'/',pageUrl],{encoding:'utf8',maxBuffer:8*1024*1024});
+  const tags=[...page.matchAll(/<img\\b[^>]*>/gi)].map(m=>m[0]);
+  const candidates=tags.map(tag=>{const src=(tag.match(/\\b(?:src|data-src|data-lazy-src|data-original)=["']([^"']+)["']/i)||[])[1];const alt=(tag.match(/\\balt=["']([^"']*)["']/i)||[])[1]||'';return{src,alt};}).filter(x=>x.src&&!/^data:/i.test(x.src));
+  let chosen=candidates.find(x=>/iplay.?80h/i.test(x.alt+' '+x.src))?.src;
+  if(!chosen){const metas=[...page.matchAll(/<meta\\b[^>]*>/gi)].map(m=>m[0]);for(const tag of metas){if(/og:image|twitter:image/i.test(tag)){const c=(tag.match(/\\bcontent=["']([^"']+)["']/i)||[])[1];if(c){chosen=c;break;}}}}
+  if(chosen){ipAsset.original=new URL(chosen,pageUrl).href;ipAsset.referer=pageUrl;ipAsset.credit='ALLDOCUBE official product page';ipAsset.scrapedFrom=pageUrl;console.log('IPLAY_OFFICIAL_IMAGE '+ipAsset.original);break;}
+  console.log('IPLAY_PAGE_NO_IMAGE '+pageUrl);
+ }catch(e){console.log('IPLAY_PAGE_FETCH_MISS '+pageUrl);}
+}
 fs.mkdirSync('src/assets',{recursive:true});fs.mkdirSync('src/archive',{recursive:true});
 for(const a of assets){let ok=false;for(const ref of [a.referer,null]){try{const args=['-fLsS','--connect-timeout','5','--max-time','12','-A','Mozilla/5.0'];if(ref)args.push('-e',ref);args.push('-o','src'+a.path,a.original);cp.execFileSync('curl',args,{stdio:'pipe'});const b=fs.readFileSync('src'+a.path);const valid=(b[0]===255&&b[1]===216)||b.subarray(0,8).toString('hex')==='89504e470d0a1a0a'||(b.toString('ascii',0,4)==='RIFF'&&b.toString('ascii',8,12)==='WEBP');if(b.length<8000||!valid)throw Error('Invalid image asset '+a.path+' bytes='+b.length);a.bytes=b.length;ok=true;console.log('IMAGE_OK '+a.path+' '+b.length);break;}catch(e){console.log('IMAGE_RETRY '+a.path+' '+(ref||'no-referer'));}}if(!ok){a.remoteFallback=true;try{fs.unlinkSync('src'+a.path)}catch{}console.log('IMAGE_REMOTE_FALLBACK '+a.path+' '+a.original);}}
 let h=fs.readFileSync('nov27-final.html','utf8');for(const a of assets)if(a.remoteFallback)h=h.replaceAll(a.path,a.original);if(!h.includes('DAILY ISSUE · 2026.11.27 · FRIDAY')||!h.includes('id="issue27-service-blueprint"')||!h.includes('2026-11-27-background-robotics.jpg'))throw Error('Issue 27 content validation failed');
