@@ -2,7 +2,7 @@ const fs=require('fs'),cp=require('child_process'),vm=require('vm');
 const assets=[
 {path:'/assets/2026-11-27-x500.jpg',original:'https://akurat.sgp1.cdn.digitaloceanspaces.com/images/20260923-16946416434-0-img-20260923-wa0015.jpg',credit:'Akurat media image'},
 {path:'/assets/2026-11-27-watch-gt2.png',original:'https://wwwstatic.vivo.com.cn/vivoportal/files/image/detail/20250925/1302b12af7c62dd673087aa13bc56fe0.png',credit:'vivo official product page'},
-{path:'/assets/2026-11-27-iplay80h.jpg',original:'https://prcdn.freetls.fastly.net/release_image/141131/33/141131-33-c84850128d1d87bc9c5040c3267502d-1500x615.jpg?width=536&quality=85%2C75&format=jpeg&auto=webp&fit=bounds&bg-color=fff',credit:'ALLDOCUBE press release'},
+{path:'/assets/2026-11-27-iplay80h.jpg',original:'https://img2.quasarzone.com/editor/2026/11/27/9fb7c56648cbc40b819fc5449d28a81f.webp',credit:'QuasarZone product photo'},
 {path:'/assets/2026-11-27-datacanvas.jpg',original:'https://imgslim.geekpark.net/uploads/image/file/e3/55/e355ed02b7318071c5960157139cff94.jpeg',credit:'GeekPark event coverage'},
 {path:'/assets/2026-11-27-spire2.jpg',original:'https://www.zj-humanoid.com/uploads/upload/images/20250329/f8ec310f809a95e7e5ec5fe18f2eb530.jpg',credit:'Zhejiang Humanoid official site'},
 {path:'/assets/2026-11-27-engineai.jpg',original:'https://en-engineai-1304599088.cos.ap-guangzhou.myqcloud.com/static/home/images/tuprimfw1.jpg',credit:'EngineAI official product page'},
