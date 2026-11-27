@@ -1,5 +1,5 @@
 {
-  "deployment": "dpl_C9mtZUSQd4vdo5r6G2X38aV6yS9L",
+  "deployment": "dpl_Fzwf2F41Ej74yCBpBXF5dJTru61Z",
   "files": [
     {
       "path": "adjacent-month.js",
@@ -227,7 +227,8 @@
     },
     {
       "path": "fogg-zh-annotated.webp",
-      "excluded": "binary asset: redistribution review required"
+      "sha": "a452fb8caebac8fc66f569f5c4310e03482f7a10",
+      "chunks": []
     },
     {
       "path": "forecast-algorithm.js",
@@ -354,7 +355,8 @@
     },
     {
       "path": "issue23-images.js",
-      "excluded": "possible credential, review required"
+      "sha": "b5f38aa88af94d66bf1628e97806211b49ef609e",
+      "chunks": []
     },
     {
       "path": "issue24-polish.js",
@@ -427,6 +429,84 @@
       "chunks": [
         "53-0.txt"
       ]
+    },
+    {
+      "path": "nov25-build.js",
+      "bytes": 158,
+      "sha": "5dbaf925891c26b6bc40e3b1e3a75b0b53744a27",
+      "chunks": []
+    },
+    {
+      "path": "nov25-image-build.js",
+      "bytes": 150,
+      "sha": "0fe289a71ed0f9da577c34bd46ac2148483b3087",
+      "chunks": []
+    },
+    {
+      "path": "nov25-image-fix.js",
+      "bytes": 2501,
+      "sha": "af1c04167f8a0b11821f724966501cc7b16b57ac",
+      "chunks": []
+    },
+    {
+      "path": "nov25-oceanlake-visual.js",
+      "bytes": 1549,
+      "sha": "dd77f5369f497951053d051e7b663805d37cd4d8",
+      "chunks": []
+    },
+    {
+      "path": "nov25-release.js",
+      "bytes": 13633,
+      "sha": "bb90522d286f02c45224aa9a627222e2c9aeb3f1",
+      "chunks": []
+    },
+    {
+      "path": "nov25-visual-build.js",
+      "bytes": 163,
+      "sha": "6dc41ab360c17d6275537c915d502e307d5111fa",
+      "chunks": []
+    },
+    {
+      "path": "nov26-final-build.js",
+      "bytes": 161,
+      "sha": "744753b7081542882c4277fc97b523779f0b9703",
+      "chunks": []
+    },
+    {
+      "path": "nov26-final-release.js",
+      "bytes": 2639,
+      "sha": "ac43b588a6fe1c57333152cf886d4fa7771dc434",
+      "chunks": []
+    },
+    {
+      "path": "nov26-final.html",
+      "bytes": 185291,
+      "sha": "6f8409222586e605f9d5b43b61674b59b9900121",
+      "chunks": []
+    },
+    {
+      "path": "nov26-prior.html",
+      "bytes": 177337,
+      "sha": "c7a63d10a43138ca2e0599a2f41dafda9add5f8c",
+      "chunks": []
+    },
+    {
+      "path": "nov27-final-build.js",
+      "bytes": 186,
+      "sha": "9e6f20d909e1203a82e4e721ab722c5ba4afad85",
+      "chunks": []
+    },
+    {
+      "path": "nov27-final-release.js",
+      "bytes": 5512,
+      "sha": "2b439944b5f70bd9fb24014b312e314cfa3a267c",
+      "chunks": []
+    },
+    {
+      "path": "nov27-final.html",
+      "bytes": 191547,
+      "sha": "3b6e8b73dd6ba883b33bbf7f1688924a336b4bd4",
+      "chunks": []
     },
     {
       "path": "optical-glass-build.js",
@@ -611,10 +691,22 @@
       "bytes": 91930,
       "sha": "02fe16b012afb63b80c07d90777ef667ebf9efbe",
       "chunks": [
-        "76-0.txt",
-        "76-1.txt",
-        "76-2.txt"
+        "75-0.txt",
+        "75-1.txt",
+        "75-2.txt"
       ]
+    },
+    {
+      "path": "tech-background-build.js",
+      "bytes": 159,
+      "sha": "88d596be2cc1b83a0cb3712a2ce99b9cb37dbb7a",
+      "chunks": []
+    },
+    {
+      "path": "tech-background-v1.js",
+      "bytes": 2289,
+      "sha": "3759a40fd6f825068787b1e3cc8d414d42b4d848",
+      "chunks": []
     },
     {
       "path": "translate-fogg-zh.js",
@@ -623,6 +715,12 @@
       "chunks": [
         "77-0.txt"
       ]
+    },
+    {
+      "path": "vercel.json",
+      "bytes": 97,
+      "sha": "f4113427677b9115fe0c53bd08754cc63a85a20f",
+      "chunks": []
     }
   ]
 }
