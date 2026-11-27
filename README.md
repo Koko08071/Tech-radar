@@ -10,7 +10,7 @@
 
 ## 首页动态预览
 
-[![科技新品雷达首页动态预览（高清，7 秒循环）](https://raw.githubusercontent.com/Koko08071/Tech-radar/edf504ae5a0a3ef72729c9d98f6299a6a0dbbcc1/docs/homepage-preview.gif)](https://tech-radar-daily.vercel.app/)
+[![科技新品雷达首页动态预览（高清，7 秒循环）](https://raw.githubusercontent.com/Koko08071/Tech-radar/f38c98ee4fccafdcda95bba8277d2d4b34eeb9d7/docs/homepage-preview.gif)](https://tech-radar-daily.vercel.app/)
 
 *正式站录屏，包含动态背景、TECH RADAR 主标题、极简数字信息条与带彩色识别图标的横向滚动科技生态标签。点击动图可进入正式网站。*
 
