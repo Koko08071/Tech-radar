@@ -10,7 +10,7 @@
 
 ## 首页动态预览
 
-[![科技新品雷达首页动态预览（1280 × 720，7 秒循环）](docs/homepage-preview.gif)](https://tech-radar-daily.vercel.app/)
+[![科技新品雷达首页动态预览（1440 × 810，7 秒循环）](docs/homepage-preview.gif)](https://tech-radar-daily.vercel.app/)
 
 *正式站录屏，包含动态背景、TECH RADAR 主标题、极简数字信息条与横向滚动的科技生态标签。点击动图可进入正式网站。*
 
@@ -87,7 +87,7 @@ python -m http.server 8000 --directory site
 - **06:30（北京时间）**：独立核验当天刊期、图片、归档与正式域名；若主任务漏发或内容不完整，自动补发。
 - 只有 Production 部署为 READY、正式域名 HTTP 200、当天内容和关键图片可访问，才算发布成功。
 - **每次更新（含日更、UI 微调、功能修复）均同步 GitHub `main`**：首页快照、实际生产源码、构建脚本、配置、部署清单和 README；不得只更新 Vercel。
-- 首页视觉或交互改版后，GitHub Actions 自动录制正式站 7 秒循环动图（1280 × 720、8 fps），更新 `docs/homepage-preview.gif` 并同步 README；不再用静态截图代替动态背景。
+- 首页视觉或交互改版后，GitHub Actions 自动录制正式站 7 秒循环动图（1440 × 810、12 fps），更新 `docs/homepage-preview.gif` 并同步 README；不再用静态截图代替动态背景。
 - 自动任务由 ChatGPT 自动化执行，不是本仓库内的 GitHub Actions 定时爬虫；不发送邮件。
 
 ## Vercel 部署
