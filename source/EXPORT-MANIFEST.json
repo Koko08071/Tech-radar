@@ -1,5 +1,5 @@
 {
-  "deployment": "dpl_BaPx61qJrFPyZsk6fprQvMXFRJjQ",
+  "deployment": "dpl_gxjazes1WTj9ZbaVpxp7XE7S1zmx",
   "files": [
     {
       "path": "adjacent-month.js",
@@ -492,7 +492,7 @@
     },
     {
       "path": "nov27-final-build.js",
-      "sha": "8abae9d54dee09b9306497b585a718f4ea6608d7",
+      "sha": "a9ccd315c332406258fe472f76f32e5132e07f8b",
       "source": "source/nov27-final-build.js"
     },
     {
@@ -502,7 +502,7 @@
     },
     {
       "path": "nov27-final.html",
-      "sha": "6b3a63b4351323deb363c1d245aa9c472b490d87",
+      "sha": "1a38cb0846670bc7b667d7ec32ece6089ab21305",
       "source": "Vercel production source; historical export chunks not reused"
     },
     {
