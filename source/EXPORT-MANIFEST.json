@@ -1,5 +1,5 @@
 {
-  "deployment": "dpl_32poJ73qAjJghDoXDnyNGQrtmTGg",
+  "deployment": "dpl_sVXqy6yH1gLoVCddaDvGx7QYaoGv",
   "files": [
     {
       "path": "adjacent-month.js",
@@ -492,9 +492,8 @@
     },
     {
       "path": "nov27-final-build.js",
-      "sha": "1e3d0eca42f2a82734bc94186faf4a3d79346ef8",
-      "source": "source/nov27-final-build.js",
-      "bytes": 34921
+      "sha": "85860861dfdfc5cb0d6e8867ffc67a54cbd0b23e",
+      "source": "source/nov27-final-build.js"
     },
     {
       "path": "nov27-final-release.js",
@@ -506,6 +505,46 @@
       "sha": "681c520d22d12b5d5dbcd3eb29fe7e5f39fd7031",
       "source": "source/nov27-final.html",
       "bytes": 225131
+    },
+    {
+      "path": "src/index.html",
+      "bytes": 225131,
+      "sha": "681c520d22d12b5d5dbcd3eb29fe7e5f39fd7031",
+      "source": "site/index.html"
+    },
+    {
+      "path": "src/archive/2026-11-17.html",
+      "bytes": 1486,
+      "sha": "80c282a14d2f555fb9dd850b70289648ad05f92e",
+      "chunks": [
+        "72-0.txt"
+      ]
+    },
+    {
+      "path": "src/archive/2026-11-18.html",
+      "bytes": 1486,
+      "sha": "c62904873c06752fbed837d48ffdcc20530892ff",
+      "chunks": [
+        "73-0.txt"
+      ]
+    },
+    {
+      "path": "src/archive/2026-11-19.html",
+      "bytes": 1506,
+      "sha": "2e9b23561547730d34857ae906b13da22e82f2ba",
+      "chunks": [
+        "74-0.txt"
+      ]
+    },
+    {
+      "path": "src/archive/2026-11-20.html",
+      "bytes": 91930,
+      "sha": "02fe16b012afb63b80c07d90777ef667ebf9efbe",
+      "chunks": [
+        "75-0.txt",
+        "75-1.txt",
+        "75-2.txt"
+      ]
     },
     {
       "path": "optical-glass-build.js",
@@ -650,46 +689,6 @@
       "chunks": [
         "71-0.txt"
       ]
-    },
-    {
-      "path": "src/archive/2026-11-17.html",
-      "bytes": 1486,
-      "sha": "80c282a14d2f555fb9dd850b70289648ad05f92e",
-      "chunks": [
-        "72-0.txt"
-      ]
-    },
-    {
-      "path": "src/archive/2026-11-18.html",
-      "bytes": 1486,
-      "sha": "c62904873c06752fbed837d48ffdcc20530892ff",
-      "chunks": [
-        "73-0.txt"
-      ]
-    },
-    {
-      "path": "src/archive/2026-11-19.html",
-      "bytes": 1506,
-      "sha": "2e9b23561547730d34857ae906b13da22e82f2ba",
-      "chunks": [
-        "74-0.txt"
-      ]
-    },
-    {
-      "path": "src/archive/2026-11-20.html",
-      "bytes": 91930,
-      "sha": "02fe16b012afb63b80c07d90777ef667ebf9efbe",
-      "chunks": [
-        "75-0.txt",
-        "75-1.txt",
-        "75-2.txt"
-      ]
-    },
-    {
-      "path": "src/index.html",
-      "bytes": 225131,
-      "sha": "681c520d22d12b5d5dbcd3eb29fe7e5f39fd7031",
-      "source": "site/index.html"
     },
     {
       "path": "tech-background-build.js",
