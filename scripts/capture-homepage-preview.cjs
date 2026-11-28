@@ -39,6 +39,28 @@ const FINAL_GIF = path.join(DOCS, "homepage-preview.gif");
     throw new Error("Production homepage did not return HTTP 200.");
   }
 
+
+  const expected = fs.readFileSync(path.join(ROOT, "site", "index.html"), "utf8").match(/<title>(.*?)<\/title>/)?.[1];
+  if (expected && (await page.title()) !== expected) {
+    throw new Error("Production issue and main branch snapshot do not match; do not replace README GIF.");
+  }
+  if (errors.length) throw new Error("Production page script errors: " + errors.join("; "));
+  // Real Chromium viewport checks use the public domain, never local-only files.
+  for (const width of [320, 375, 390, 430, 768]) {
+    const mobile = await browser.newContext({ viewport: {width,height:844}, isMobile:true, hasTouch:true, deviceScaleFactor:2 });
+    try {
+      const p = await mobile.newPage();
+      const response = await p.goto("https://tech-radar-daily.vercel.app/",{waitUntil:"domcontentloaded",timeout:60000});
+      if (!response || response.status()!==200) throw new Error("mobile HTTP "+width);
+      await p.waitForSelector("#products .product");
+      const result=await p.evaluate(()=>({width:document.documentElement.clientWidth,scrollWidth:document.documentElement.scrollWidth,nav:[...document.querySelectorAll("header .links a")].map(e=>{const r=e.getBoundingClientRect();return [r.left,r.right]}),theme:!!document.querySelector("#theme"),video:document.querySelector("#radar-background-video")?.getAttribute("src")}));
+      if(result.scrollWidth>result.width+2||result.nav.some(([l,r])=>l<0||r>result.width+2)||!result.theme||(width<=760&&result.video))throw new Error("mobile layout "+width+" "+JSON.stringify(result));
+      const theme=p.locator("#theme");await theme.click();
+      if(!(await p.locator("body").evaluate(e=>e.classList.contains("light"))))throw new Error("theme toggle "+width);
+      console.log("MOBILE_QA_OK",width,JSON.stringify(result));
+    } finally {await mobile.close();}
+  }
+
   await page.waitForFunction(() => {
     const video = document.querySelector("#radar-background-video");
     return video && video.readyState >= 3 && !video.paused;
