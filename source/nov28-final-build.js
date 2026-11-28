@@ -1,7 +1,7 @@
 const cp=require('child_process'),fs=require('fs'),path=require('path'),os=require('os');
 cp.execFileSync('node',['nov27-final-build.js'],{stdio:'inherit',timeout:360000});
 const input='src/assets/2026-11-27-background-robotics.mp4';
-const profiles=[{file:'src/assets/radar-motion-v4.webp',width:960,fps:10,quality:65,max:3500000},{file:'src/assets/radar-motion-mobile-v4.webp',width:480,fps:8,quality:55,max:1300000}];
+const profiles=[{file:'src/assets/radar-motion-v4.webp',width:640,fps:8,quality:60,max:4500000},{file:'src/assets/radar-motion-mobile-v4.webp',width:360,fps:6,quality:55,max:1600000}];
 function verify(file,max){const b=fs.readFileSync(file);if(b.length<1000||b.length>max||b.toString('ascii',0,4)!=='RIFF'||b.toString('ascii',8,12)!=='WEBP')throw Error('Invalid animated WebP: '+file+' '+b.length);let frames=0,animated=false;for(let i=12;i+8<=b.length;){const t=b.toString('ascii',i,i+4),n=b.readUInt32LE(i+4);if(i+8+n>b.length)throw Error('Invalid WebP chunk');if(t==='ANIM')animated=true;if(t==='ANMF')frames++;i+=8+n+(n%2);}if(!animated||frames<20)throw Error('WebP is not animated: '+file+' frames='+frames);console.log('MOTION_WEBP_OK '+file+' frames='+frames+' bytes='+b.length);}
 let ffmpeg='ffmpeg',tmp=null;
 try{cp.execFileSync(ffmpeg,['-version'],{stdio:'ignore'});}catch(e){tmp=fs.mkdtempSync(path.join(os.tmpdir(),'radar-ffmpeg-'));cp.execFileSync('npm',['install','--prefix',tmp,'--no-save','--ignore-scripts','--no-audit','--no-fund','@ffmpeg-installer/linux-x64@4.1.0'],{stdio:'inherit',timeout:120000});ffmpeg=path.join(tmp,'node_modules/@ffmpeg-installer/linux-x64/ffmpeg');fs.chmodSync(ffmpeg,0o755);}
