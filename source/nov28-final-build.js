@@ -1,0 +1,1 @@
+const cp=require('child_process');cp.execFileSync('node',['nov27-final-build.js'],{stdio:'inherit',timeout:360000});cp.execFileSync('node',['nov28-final-release.js'],{stdio:'inherit',timeout:360000});
