@@ -14,18 +14,20 @@
 
 *正式站录屏，包含动态背景、TECH RADAR 主标题、极简数字信息条与带彩色识别图标的横向滚动科技生态标签。点击动图可进入正式网站。*
 
-## 最新刊期 · 2026.11.27
+## 最新刊期 · 2026.11.28
 
-本期精选 6 项产品与技术更新，覆盖印度、日本和中国：
+本期精选 6 项产品与技术更新，按发布市场区分海外与中国相关动态：
 
-- **vivo X500 Series**：印度发布，重点关注长焦追踪与高帧率视频能力。
-- **vivo WATCH GT 2**：vivo 在印度推出首款智能手表。
-- **ALLDOCUBE iPlay 80H**：日本上市的 11 英寸 Android 17 平板。
-- **DataCanvas Physical AI Factory**：连接数据、模型、仿真、真机验证与运营部署。
-- **浙江人形 SPIRE 2.0**：Navi 数据、环境表征、动作策略与技能库协同。
-- **EngineAI Awaken 消防巡检方案**：将任务理解、导航、操作和检测用于消防设施巡检。
+- **KT 三丽鸥儿童手机**：基于 Galaxy A18 LTE，11 月 27 日韩国开售。
+- **XREAL AURA**：Android XR 空间计算眼镜在日本上市。
+- **ASRock Arc Pro B65 Creator 32GB**：专业工作站显卡在日本渠道发售。
+- **OlloBot OlloNi SS1**：家庭陪伴机器人预订计划公告，尚未上市。
+- **智元精灵 G2**：龙旗产线精密装配部署新进展。
+- **LingBot-Map 2.0 / Navi**：蚂蚁灵波发布开源三维重建与空间记忆导航模型。
 
-本期「现在就试」：OpenSCAD、n8n。产品研习每日课程：服务蓝图（Service Blueprint），以 Amazon 1-Click 一键下单这一经典功能拆解用户动作、前台触点、后台流程与支撑系统；后台链路明确标注为教学推演，不冒充 Amazon 内部架构。
+工具实验室：Excalidraw、Squoosh。产品研习：费茨定律（Fitts's Law），以初代 iPhone 多点触控为经典案例。背景摄影：[ThisIsEngineering · Pexels](https://www.pexels.com/photo/engineers-holding-circuit-board-3912373/)；动态背景：Engin Altundağ · Pexels。实际图片来源见 [线上素材清单](https://tech-radar-daily.vercel.app/assets/2026-11-28-image-sources.json)。
+
+正式域名保持不变；手机端采用双行导航、单列内容、按需加载图片及低流量背景策略。发布检查涵盖 320 / 375 / 390 / 430 / 768 px 浏览器视口，正式站与仓库首页刊期一致后才录制 README 动图。
 
 ## 产品研习内容原则
 
@@ -43,8 +45,6 @@
 - 历史日报按日期归档，日历可跳转历史刊期。
 - 首页不展示额外副标题，突出刊期和主标题。
 
-本期背景摄影：[Freek Wolsink · Pexels](https://www.pexels.com/photo/industrial-robot-arm-in-a-manufacturing-facility-34207359/)。产品配图优先采用官方图片；使用媒体图片时在页面标注图片来源。具体图片地址和来源记录在 `/assets/2026-11-27-image-sources.json`。
-
 ## 项目结构
 
 ```text
@@ -57,14 +57,14 @@ Tech-radar/
 ├── .github/workflows/
 │   └── capture-homepage-preview.yml
 ├── site/
-│   ├── index.html             # 2026-11-27 首页快照
-│   ├── archive/               # 11 月 17–26 日历史日报
+│   ├── index.html             # 2026-11-28 首页快照
+│   ├── archive/               # 11 月 17–27 日历史日报
 │   ├── calendar-lunar.js
 │   └── *.css / *.js
 ├── source/
-│   ├── nov27-final.html       # 当期生产页面源码
-│   ├── nov27-final-build.js   # 当期构建入口
-│   ├── nov27-final-release.js # 图片校验、归档与发布检查
+│   ├── nov28-final.html       # 当期生产页面源码
+│   ├── nov28-final-build.js   # 当期构建入口
+│   ├── nov28-final-release.js # 图片校验、归档与发布检查
 │   ├── EXPORT-MANIFEST.json   # 最新 production deployment 文件清单
 │   ├── vercel.json
 │   └── 历史刊期及构建脚本
@@ -84,7 +84,7 @@ python -m http.server 8000 --directory site
 ## 每日发布与核验
 
 - **06:00（北京时间）**：每日新品研究、页面制作、归档、构建与 Vercel Production 发布。
-- **06:30（北京时间）**：独立核验当天刊期、图片、归档与正式域名；若主任务漏发或内容不完整，自动补发。
+- **07:00 / 09:00（北京时间）**：独立核验当天刊期、图片、归档与正式域名；若主任务漏发或内容不完整，自动补发。
 - 只有 Production 部署为 READY、正式域名 HTTP 200、当天内容和关键图片可访问，才算发布成功。
 - **每次更新（含日更、UI 微调、功能修复）均同步 GitHub `main`**：首页快照、实际生产源码、构建脚本、配置、部署清单和 README；不得只更新 Vercel。
 - 首页视觉或交互改版后，GitHub Actions 自动录制正式站 7 秒循环动图（优先 1440 × 810、12 fps，按 25 MB 上限自适应编码），更新 `docs/homepage-preview.gif` 并同步 README；不再用静态截图代替动态背景。
@@ -96,7 +96,7 @@ python -m http.server 8000 --directory site
 
 ## 源码恢复说明
 
-当前生产部署已同步至 `source/EXPORT-MANIFEST.json`。历史恢复过程中有两个旧文件未纳入公开源码：`issue23-images.js` 需要进一步检查，`fogg-zh-annotated.webp` 需要核实素材再分发许可。当前 11 月 27 日刊期已通过可用构建脚本完成 Production 发布；后续继续保留原始来源与许可记录。
+当前生产部署已同步至 `source/EXPORT-MANIFEST.json`。历史恢复过程中有两个旧文件未纳入公开源码：`issue23-images.js` 需要进一步检查，`fogg-zh-annotated.webp` 需要核实素材再分发许可。当前 11 月 28 日刊期已通过构建脚本完成 Production 发布；后续继续保留原始来源与许可记录。
 
 ## 图片与版权
 
