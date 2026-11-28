@@ -1,5 +1,5 @@
 {
-  "deployment": "dpl_A6Xh6nNBH9frkzM1Mv6gbguWTZiq",
+  "deployment": "dpl_DZZ282jRCD1YKz6ifmyNFW1uynVv",
   "files": [
     {
       "path": "adjacent-month.js",
@@ -624,8 +624,8 @@
     },
     {
       "path": "nov28-final-build.js",
-      "bytes": 200,
-      "sha": "1b8d5dfd97ebd7bbd69777e3631b228bd5701073",
+      "bytes": 2117,
+      "sha": "ed938bdb248b2792d2e3d74075423cc36bad08b8",
       "chunks": [],
       "deployment_path": "src/nov28-final-build.js"
     },
@@ -638,8 +638,8 @@
     },
     {
       "path": "nov28-final.html",
-      "bytes": 229568,
-      "sha": "42c419a98db2622e50cb4ef1e053a2a9de0cd737",
+      "bytes": 226915,
+      "sha": "12bac8ef288b2b77cf11fafa1c77e783e9a9247c",
       "chunks": [],
       "deployment_path": "src/nov28-final.html"
     },
@@ -735,8 +735,8 @@
     },
     {
       "path": "public-mobile.js",
-      "bytes": 8736,
-      "sha": "3a7c697d7c3299891c07a70020e37f4dbed77c5b",
+      "bytes": 11655,
+      "sha": "8b1edac77392d3dd36fbc8614b32a0aff426db6a",
       "chunks": [],
       "deployment_path": "src/public-mobile.js"
     },
@@ -843,10 +843,12 @@
       "deployment_path": "src/vercel.json"
     }
   ],
-  "verification": "Production READY, public HTTP 200, v3 playback watchdog and explicit motion opt-in verified in served HTML. Simulated blocked, frozen, reduced-motion, opted-in and mobile scenarios passed. Physical device playback not independently tested.",
+  "verification": "Production READY, public HTTP 200, animated WebP v4 markup and both public assets HTTP 200 image/webp. Desktop 64 frames 3375816 bytes; mobile 48 frames 981880 bytes. Local Chromium sample animation pixel comparison passed; user device playback not independently verified.",
   "output": {
     "homepage": "/index.html",
     "archive": "/archive/2026-11-27.html",
-    "image_sources": "/assets/2026-11-28-image-sources.json"
+    "image_sources": "/assets/2026-11-28-image-sources.json",
+    "animated_background_desktop": "/assets/radar-motion-v4.webp",
+    "animated_background_mobile": "/assets/radar-motion-mobile-v4.webp"
   }
 }
