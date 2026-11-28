@@ -1,5 +1,5 @@
 {
-  "deployment": "dpl_CNLxYUq4Vq4ZGLMAQaHg3LmygLec",
+  "deployment": "dpl_A6Xh6nNBH9frkzM1Mv6gbguWTZiq",
   "files": [
     {
       "path": "adjacent-month.js",
@@ -638,8 +638,8 @@
     },
     {
       "path": "nov28-final.html",
-      "bytes": 228372,
-      "sha": "4b3b0dacae3989ef07b0358d22edbca3dddc6e52",
+      "bytes": 229568,
+      "sha": "42c419a98db2622e50cb4ef1e053a2a9de0cd737",
       "chunks": [],
       "deployment_path": "src/nov28-final.html"
     },
@@ -735,8 +735,8 @@
     },
     {
       "path": "public-mobile.js",
-      "bytes": 7443,
-      "sha": "111123497629ad69838836875db4af46e411ed78",
+      "bytes": 8736,
+      "sha": "3a7c697d7c3299891c07a70020e37f4dbed77c5b",
       "chunks": [],
       "deployment_path": "src/public-mobile.js"
     },
@@ -843,7 +843,7 @@
       "deployment_path": "src/vercel.json"
     }
   ],
-  "verification": "Vercel production READY; 98 source files accounted for. Cache-busted public domain HTTP 200 with motion compatibility v2 and Nov 28 issue. Video asset build verified; six simulated runtime scenarios passed. Physical cross-browser playback not independently tested.",
+  "verification": "Production READY, public HTTP 200, v3 playback watchdog and explicit motion opt-in verified in served HTML. Simulated blocked, frozen, reduced-motion, opted-in and mobile scenarios passed. Physical device playback not independently tested.",
   "output": {
     "homepage": "/index.html",
     "archive": "/archive/2026-11-27.html",
