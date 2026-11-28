@@ -1,5 +1,5 @@
 {
-  "deployment": "dpl_BaaNFVD5RmJGbifSAkCwY1veaPNE",
+  "deployment": "dpl_CNLxYUq4Vq4ZGLMAQaHg3LmygLec",
   "files": [
     {
       "path": "adjacent-month.js",
@@ -8,7 +8,7 @@
       "chunks": [
         "0-0.txt"
       ],
-      "deployment_path": "src/src/adjacent-month.js"
+      "deployment_path": "src/adjacent-month.js"
     },
     {
       "path": "ambient-patch.js",
@@ -17,7 +17,7 @@
       "chunks": [
         "1-0.txt"
       ],
-      "deployment_path": "src/src/ambient-patch.js"
+      "deployment_path": "src/ambient-patch.js"
     },
     {
       "path": "ambient.css",
@@ -26,7 +26,7 @@
       "chunks": [
         "2-0.txt"
       ],
-      "deployment_path": "src/src/ambient.css"
+      "deployment_path": "src/ambient.css"
     },
     {
       "path": "ambient.html",
@@ -35,7 +35,7 @@
       "chunks": [
         "3-0.txt"
       ],
-      "deployment_path": "src/src/ambient.html"
+      "deployment_path": "src/ambient.html"
     },
     {
       "path": "ambient.js",
@@ -44,7 +44,7 @@
       "chunks": [
         "4-0.txt"
       ],
-      "deployment_path": "src/src/ambient.js"
+      "deployment_path": "src/ambient.js"
     },
     {
       "path": "archive21-fix.js",
@@ -53,7 +53,7 @@
       "chunks": [
         "5-0.txt"
       ],
-      "deployment_path": "src/src/archive21-fix.js"
+      "deployment_path": "src/archive21-fix.js"
     },
     {
       "path": "blue-glass-build.js",
@@ -62,7 +62,7 @@
       "chunks": [
         "6-0.txt"
       ],
-      "deployment_path": "src/src/blue-glass-build.js"
+      "deployment_path": "src/blue-glass-build.js"
     },
     {
       "path": "blue-glass-v7.js",
@@ -71,7 +71,7 @@
       "chunks": [
         "7-0.txt"
       ],
-      "deployment_path": "src/src/blue-glass-v7.js"
+      "deployment_path": "src/blue-glass-v7.js"
     },
     {
       "path": "build.js",
@@ -80,7 +80,7 @@
       "chunks": [
         "8-0.txt"
       ],
-      "deployment_path": "src/src/build.js"
+      "deployment_path": "src/build.js"
     },
     {
       "path": "clean-grid.js",
@@ -89,7 +89,7 @@
       "chunks": [
         "9-0.txt"
       ],
-      "deployment_path": "src/src/clean-grid.js"
+      "deployment_path": "src/clean-grid.js"
     },
     {
       "path": "clear-glass-build.js",
@@ -98,7 +98,7 @@
       "chunks": [
         "10-0.txt"
       ],
-      "deployment_path": "src/src/clear-glass-build.js"
+      "deployment_path": "src/clear-glass-build.js"
     },
     {
       "path": "clear-glass-v9.js",
@@ -107,7 +107,7 @@
       "chunks": [
         "11-0.txt"
       ],
-      "deployment_path": "src/src/clear-glass-v9.js"
+      "deployment_path": "src/clear-glass-v9.js"
     },
     {
       "path": "daily-photo-patch.js",
@@ -116,7 +116,7 @@
       "chunks": [
         "12-0.txt"
       ],
-      "deployment_path": "src/src/daily-photo-patch.js"
+      "deployment_path": "src/daily-photo-patch.js"
     },
     {
       "path": "daily.br.b64",
@@ -125,7 +125,7 @@
       "chunks": [
         "13-0.txt"
       ],
-      "deployment_path": "src/src/daily.br.b64"
+      "deployment_path": "src/daily.br.b64"
     },
     {
       "path": "dedupe-wallpaper.js",
@@ -134,7 +134,7 @@
       "chunks": [
         "14-0.txt"
       ],
-      "deployment_path": "src/src/dedupe-wallpaper.js"
+      "deployment_path": "src/dedupe-wallpaper.js"
     },
     {
       "path": "editorial-patch.js",
@@ -143,7 +143,7 @@
       "chunks": [
         "15-0.txt"
       ],
-      "deployment_path": "src/src/editorial-patch.js"
+      "deployment_path": "src/editorial-patch.js"
     },
     {
       "path": "editorial.css",
@@ -152,7 +152,7 @@
       "chunks": [
         "16-0.txt"
       ],
-      "deployment_path": "src/src/editorial.css"
+      "deployment_path": "src/editorial.css"
     },
     {
       "path": "editorial.js",
@@ -161,7 +161,7 @@
       "chunks": [
         "17-0.txt"
       ],
-      "deployment_path": "src/src/editorial.js"
+      "deployment_path": "src/editorial.js"
     },
     {
       "path": "electric-blue-build.js",
@@ -170,7 +170,7 @@
       "chunks": [
         "18-0.txt"
       ],
-      "deployment_path": "src/src/electric-blue-build.js"
+      "deployment_path": "src/electric-blue-build.js"
     },
     {
       "path": "electric-blue-v3.js",
@@ -179,7 +179,7 @@
       "chunks": [
         "19-0.txt"
       ],
-      "deployment_path": "src/src/electric-blue-v3.js"
+      "deployment_path": "src/electric-blue-v3.js"
     },
     {
       "path": "finalize.js",
@@ -188,7 +188,7 @@
       "chunks": [
         "20-0.txt"
       ],
-      "deployment_path": "src/src/finalize.js"
+      "deployment_path": "src/finalize.js"
     },
     {
       "path": "fix-archive19.js",
@@ -197,7 +197,7 @@
       "chunks": [
         "21-0.txt"
       ],
-      "deployment_path": "src/src/fix-archive19.js"
+      "deployment_path": "src/fix-archive19.js"
     },
     {
       "path": "fix-photo-script.js",
@@ -206,7 +206,7 @@
       "chunks": [
         "22-0.txt"
       ],
-      "deployment_path": "src/src/fix-photo-script.js"
+      "deployment_path": "src/fix-photo-script.js"
     },
     {
       "path": "fogg-contrast-patch.js",
@@ -215,7 +215,7 @@
       "chunks": [
         "23-0.txt"
       ],
-      "deployment_path": "src/src/fogg-contrast-patch.js"
+      "deployment_path": "src/fogg-contrast-patch.js"
     },
     {
       "path": "fogg-contrast.css",
@@ -224,7 +224,7 @@
       "chunks": [
         "24-0.txt"
       ],
-      "deployment_path": "src/src/fogg-contrast.css"
+      "deployment_path": "src/fogg-contrast.css"
     },
     {
       "path": "fogg-figure.css",
@@ -233,7 +233,7 @@
       "chunks": [
         "25-0.txt"
       ],
-      "deployment_path": "src/src/fogg-figure.css"
+      "deployment_path": "src/fogg-figure.css"
     },
     {
       "path": "fogg-figure.html",
@@ -242,7 +242,7 @@
       "chunks": [
         "26-0.txt"
       ],
-      "deployment_path": "src/src/fogg-figure.html"
+      "deployment_path": "src/fogg-figure.html"
     },
     {
       "path": "fogg-visual-patch.js",
@@ -251,14 +251,14 @@
       "chunks": [
         "27-0.txt"
       ],
-      "deployment_path": "src/src/fogg-visual-patch.js"
+      "deployment_path": "src/fogg-visual-patch.js"
     },
     {
       "path": "fogg-zh-annotated.webp",
       "bytes": null,
       "sha": "a452fb8caebac8fc66f569f5c4310e03482f7a10",
       "chunks": [],
-      "deployment_path": "src/src/fogg-zh-annotated.webp"
+      "deployment_path": "src/fogg-zh-annotated.webp"
     },
     {
       "path": "forecast-algorithm.js",
@@ -267,7 +267,7 @@
       "chunks": [
         "29-0.txt"
       ],
-      "deployment_path": "src/src/forecast-algorithm.js"
+      "deployment_path": "src/forecast-algorithm.js"
     },
     {
       "path": "forecast-patch.js",
@@ -276,7 +276,7 @@
       "chunks": [
         "30-0.txt"
       ],
-      "deployment_path": "src/src/forecast-patch.js"
+      "deployment_path": "src/forecast-patch.js"
     },
     {
       "path": "full-build.js",
@@ -285,7 +285,7 @@
       "chunks": [
         "31-0.txt"
       ],
-      "deployment_path": "src/src/full-build.js"
+      "deployment_path": "src/full-build.js"
     },
     {
       "path": "glass-build.js",
@@ -294,7 +294,7 @@
       "chunks": [
         "32-0.txt"
       ],
-      "deployment_path": "src/src/glass-build.js"
+      "deployment_path": "src/glass-build.js"
     },
     {
       "path": "glass-ui.css",
@@ -303,7 +303,7 @@
       "chunks": [
         "33-0.txt"
       ],
-      "deployment_path": "src/src/glass-ui.css"
+      "deployment_path": "src/glass-ui.css"
     },
     {
       "path": "glass-ui.js",
@@ -312,7 +312,7 @@
       "chunks": [
         "34-0.txt"
       ],
-      "deployment_path": "src/src/glass-ui.js"
+      "deployment_path": "src/glass-ui.js"
     },
     {
       "path": "glass-v4.js",
@@ -321,7 +321,7 @@
       "chunks": [
         "35-0.txt"
       ],
-      "deployment_path": "src/src/glass-v4.js"
+      "deployment_path": "src/glass-v4.js"
     },
     {
       "path": "header-build-v2.js",
@@ -330,7 +330,7 @@
       "chunks": [
         "36-0.txt"
       ],
-      "deployment_path": "src/src/header-build-v2.js"
+      "deployment_path": "src/header-build-v2.js"
     },
     {
       "path": "header-metrics-v2.js",
@@ -339,7 +339,7 @@
       "chunks": [
         "37-0.txt"
       ],
-      "deployment_path": "src/src/header-metrics-v2.js"
+      "deployment_path": "src/header-metrics-v2.js"
     },
     {
       "path": "hop.html",
@@ -348,7 +348,7 @@
       "chunks": [
         "38-0.txt"
       ],
-      "deployment_path": "src/src/hop.html"
+      "deployment_path": "src/hop.html"
     },
     {
       "path": "hop.js",
@@ -357,7 +357,7 @@
       "chunks": [
         "39-0.txt"
       ],
-      "deployment_path": "src/src/hop.js"
+      "deployment_path": "src/hop.js"
     },
     {
       "path": "issue22-data.json",
@@ -366,7 +366,7 @@
       "chunks": [
         "40-0.txt"
       ],
-      "deployment_path": "src/src/issue22-data.json"
+      "deployment_path": "src/issue22-data.json"
     },
     {
       "path": "issue22.js",
@@ -375,7 +375,7 @@
       "chunks": [
         "41-0.txt"
       ],
-      "deployment_path": "src/src/issue22.js"
+      "deployment_path": "src/issue22.js"
     },
     {
       "path": "issue23-apply.js",
@@ -384,7 +384,7 @@
       "chunks": [
         "42-0.txt"
       ],
-      "deployment_path": "src/src/issue23-apply.js"
+      "deployment_path": "src/issue23-apply.js"
     },
     {
       "path": "issue23-home.html",
@@ -396,14 +396,14 @@
         "43-2.txt",
         "43-3.txt"
       ],
-      "deployment_path": "src/src/issue23-home.html"
+      "deployment_path": "src/issue23-home.html"
     },
     {
       "path": "issue23-images.js",
       "bytes": null,
       "sha": "b5f38aa88af94d66bf1628e97806211b49ef609e",
       "chunks": [],
-      "deployment_path": "src/src/issue23-images.js"
+      "deployment_path": "src/issue23-images.js"
     },
     {
       "path": "issue24-polish.js",
@@ -412,7 +412,7 @@
       "chunks": [
         "45-0.txt"
       ],
-      "deployment_path": "src/src/issue24-polish.js"
+      "deployment_path": "src/issue24-polish.js"
     },
     {
       "path": "issue24-release.js",
@@ -421,7 +421,7 @@
       "chunks": [
         "46-0.txt"
       ],
-      "deployment_path": "src/src/issue24-release.js"
+      "deployment_path": "src/issue24-release.js"
     },
     {
       "path": "langflow-build.js",
@@ -430,7 +430,7 @@
       "chunks": [
         "47-0.txt"
       ],
-      "deployment_path": "src/src/langflow-build.js"
+      "deployment_path": "src/langflow-build.js"
     },
     {
       "path": "langflow-editorial.js",
@@ -439,7 +439,7 @@
       "chunks": [
         "48-0.txt"
       ],
-      "deployment_path": "src/src/langflow-editorial.js"
+      "deployment_path": "src/langflow-editorial.js"
     },
     {
       "path": "lesson-compact.css",
@@ -448,7 +448,7 @@
       "chunks": [
         "49-0.txt"
       ],
-      "deployment_path": "src/src/lesson-compact.css"
+      "deployment_path": "src/lesson-compact.css"
     },
     {
       "path": "lesson-compact.js",
@@ -457,7 +457,7 @@
       "chunks": [
         "50-0.txt"
       ],
-      "deployment_path": "src/src/lesson-compact.js"
+      "deployment_path": "src/lesson-compact.js"
     },
     {
       "path": "licensed-fogg-replace.js",
@@ -466,7 +466,7 @@
       "chunks": [
         "51-0.txt"
       ],
-      "deployment_path": "src/src/licensed-fogg-replace.js"
+      "deployment_path": "src/licensed-fogg-replace.js"
     },
     {
       "path": "licensed-fogg.css",
@@ -475,7 +475,7 @@
       "chunks": [
         "52-0.txt"
       ],
-      "deployment_path": "src/src/licensed-fogg.css"
+      "deployment_path": "src/licensed-fogg.css"
     },
     {
       "path": "mime-fix.js",
@@ -484,105 +484,105 @@
       "chunks": [
         "53-0.txt"
       ],
-      "deployment_path": "src/src/mime-fix.js"
+      "deployment_path": "src/mime-fix.js"
     },
     {
       "path": "nov25-build.js",
       "bytes": 158,
       "sha": "5dbaf925891c26b6bc40e3b1e3a75b0b53744a27",
       "chunks": [],
-      "deployment_path": "src/src/nov25-build.js"
+      "deployment_path": "src/nov25-build.js"
     },
     {
       "path": "nov25-image-build.js",
       "bytes": 150,
       "sha": "0fe289a71ed0f9da577c34bd46ac2148483b3087",
       "chunks": [],
-      "deployment_path": "src/src/nov25-image-build.js"
+      "deployment_path": "src/nov25-image-build.js"
     },
     {
       "path": "nov25-image-fix.js",
       "bytes": 2501,
       "sha": "af1c04167f8a0b11821f724966501cc7b16b57ac",
       "chunks": [],
-      "deployment_path": "src/src/nov25-image-fix.js"
+      "deployment_path": "src/nov25-image-fix.js"
     },
     {
       "path": "nov25-oceanlake-visual.js",
       "bytes": 1549,
       "sha": "dd77f5369f497951053d051e7b663805d37cd4d8",
       "chunks": [],
-      "deployment_path": "src/src/nov25-oceanlake-visual.js"
+      "deployment_path": "src/nov25-oceanlake-visual.js"
     },
     {
       "path": "nov25-release.js",
       "bytes": 13633,
       "sha": "bb90522d286f02c45224aa9a627222e2c9aeb3f1",
       "chunks": [],
-      "deployment_path": "src/src/nov25-release.js"
+      "deployment_path": "src/nov25-release.js"
     },
     {
       "path": "nov25-visual-build.js",
       "bytes": 163,
       "sha": "6dc41ab360c17d6275537c915d502e307d5111fa",
       "chunks": [],
-      "deployment_path": "src/src/nov25-visual-build.js"
+      "deployment_path": "src/nov25-visual-build.js"
     },
     {
       "path": "nov26-final-build.js",
       "bytes": 161,
       "sha": "744753b7081542882c4277fc97b523779f0b9703",
       "chunks": [],
-      "deployment_path": "src/src/nov26-final-build.js"
+      "deployment_path": "src/nov26-final-build.js"
     },
     {
       "path": "nov26-final-release.js",
       "bytes": 2639,
       "sha": "ac43b588a6fe1c57333152cf886d4fa7771dc434",
       "chunks": [],
-      "deployment_path": "src/src/nov26-final-release.js"
+      "deployment_path": "src/nov26-final-release.js"
     },
     {
       "path": "nov26-final.html",
       "bytes": 185291,
       "sha": "6f8409222586e605f9d5b43b61674b59b9900121",
       "chunks": [],
-      "deployment_path": "src/src/nov26-final.html"
+      "deployment_path": "src/nov26-final.html"
     },
     {
       "path": "nov26-prior.html",
       "bytes": 177337,
       "sha": "c7a63d10a43138ca2e0599a2f41dafda9add5f8c",
       "chunks": [],
-      "deployment_path": "src/src/nov26-prior.html"
+      "deployment_path": "src/nov26-prior.html"
     },
     {
       "path": "nov27-final-build.js",
       "bytes": null,
       "sha": "f92456b75dce9a2807da656c674e103da1818ddd",
       "chunks": [],
-      "deployment_path": "src/src/nov27-final-build.js"
+      "deployment_path": "src/nov27-final-build.js"
     },
     {
       "path": "nov27-final-release.js",
       "bytes": null,
       "sha": "c1fbd664127577b33016bbe2f6536c192bad53da",
       "chunks": [],
-      "deployment_path": "src/src/nov27-final-release.js"
+      "deployment_path": "src/nov27-final-release.js"
     },
     {
       "path": "nov27-final.html",
       "bytes": null,
       "sha": "3f3d84d81cb985b4faa12a4d585e3890523ee2d2",
       "chunks": [],
-      "deployment_path": "src/src/nov27-final.html"
+      "deployment_path": "src/nov27-final.html"
     },
     {
       "path": "src/index.html",
       "bytes": null,
       "sha": "3f3d84d81cb985b4faa12a4d585e3890523ee2d2",
       "chunks": [],
-      "deployment_path": "src/src/src/index.html"
+      "deployment_path": "src/src/index.html"
     },
     {
       "path": "src/archive/2026-11-17.html",
@@ -591,7 +591,7 @@
       "chunks": [
         "72-0.txt"
       ],
-      "deployment_path": "src/src/src/archive/2026-11-17.html"
+      "deployment_path": "src/src/archive/2026-11-17.html"
     },
     {
       "path": "src/archive/2026-11-18.html",
@@ -600,7 +600,7 @@
       "chunks": [
         "73-0.txt"
       ],
-      "deployment_path": "src/src/src/archive/2026-11-18.html"
+      "deployment_path": "src/src/archive/2026-11-18.html"
     },
     {
       "path": "src/archive/2026-11-19.html",
@@ -609,7 +609,7 @@
       "chunks": [
         "74-0.txt"
       ],
-      "deployment_path": "src/src/src/archive/2026-11-19.html"
+      "deployment_path": "src/src/archive/2026-11-19.html"
     },
     {
       "path": "src/archive/2026-11-20.html",
@@ -620,28 +620,28 @@
         "75-1.txt",
         "75-2.txt"
       ],
-      "deployment_path": "src/src/src/archive/2026-11-20.html"
+      "deployment_path": "src/src/archive/2026-11-20.html"
     },
     {
       "path": "nov28-final-build.js",
       "bytes": 200,
       "sha": "1b8d5dfd97ebd7bbd69777e3631b228bd5701073",
       "chunks": [],
-      "deployment_path": "src/src/nov28-final-build.js"
+      "deployment_path": "src/nov28-final-build.js"
     },
     {
       "path": "nov28-final-release.js",
       "bytes": 5919,
       "sha": "ccd0a30bf4e784e695816048fc14a0a2ff1d209e",
       "chunks": [],
-      "deployment_path": "src/src/nov28-final-release.js"
+      "deployment_path": "src/nov28-final-release.js"
     },
     {
       "path": "nov28-final.html",
-      "bytes": 226425,
-      "sha": "94bb2f0cced5d48ed38d4a1ded10f3810efdb878",
+      "bytes": 228372,
+      "sha": "4b3b0dacae3989ef07b0358d22edbca3dddc6e52",
       "chunks": [],
-      "deployment_path": "src/src/nov28-final.html"
+      "deployment_path": "src/nov28-final.html"
     },
     {
       "path": "optical-glass-build.js",
@@ -650,7 +650,7 @@
       "chunks": [
         "54-0.txt"
       ],
-      "deployment_path": "src/src/optical-glass-build.js"
+      "deployment_path": "src/optical-glass-build.js"
     },
     {
       "path": "optical-glass-v8.js",
@@ -659,7 +659,7 @@
       "chunks": [
         "55-0.txt"
       ],
-      "deployment_path": "src/src/optical-glass-v8.js"
+      "deployment_path": "src/optical-glass-v8.js"
     },
     {
       "path": "package.json",
@@ -668,7 +668,7 @@
       "chunks": [
         "56-0.txt"
       ],
-      "deployment_path": "src/src/package.json"
+      "deployment_path": "src/package.json"
     },
     {
       "path": "patch-calendar.js",
@@ -677,7 +677,7 @@
       "chunks": [
         "57-0.txt"
       ],
-      "deployment_path": "src/src/patch-calendar.js"
+      "deployment_path": "src/patch-calendar.js"
     },
     {
       "path": "patch-images-lesson.js",
@@ -686,7 +686,7 @@
       "chunks": [
         "58-0.txt"
       ],
-      "deployment_path": "src/src/patch-images-lesson.js"
+      "deployment_path": "src/patch-images-lesson.js"
     },
     {
       "path": "photo-layout-build.js",
@@ -695,7 +695,7 @@
       "chunks": [
         "59-0.txt"
       ],
-      "deployment_path": "src/src/photo-layout-build.js"
+      "deployment_path": "src/photo-layout-build.js"
     },
     {
       "path": "photo-layout-v5.js",
@@ -704,7 +704,7 @@
       "chunks": [
         "60-0.txt"
       ],
-      "deployment_path": "src/src/photo-layout-v5.js"
+      "deployment_path": "src/photo-layout-v5.js"
     },
     {
       "path": "polish.js",
@@ -713,7 +713,7 @@
       "chunks": [
         "61-0.txt"
       ],
-      "deployment_path": "src/src/polish.js"
+      "deployment_path": "src/polish.js"
     },
     {
       "path": "post-audit.js",
@@ -722,7 +722,7 @@
       "chunks": [
         "62-0.txt"
       ],
-      "deployment_path": "src/src/post-audit.js"
+      "deployment_path": "src/post-audit.js"
     },
     {
       "path": "preflight22.js",
@@ -731,14 +731,14 @@
       "chunks": [
         "63-0.txt"
       ],
-      "deployment_path": "src/src/preflight22.js"
+      "deployment_path": "src/preflight22.js"
     },
     {
       "path": "public-mobile.js",
-      "bytes": 3107,
-      "sha": "1dd15680515316da6780d73d3af3df46b50ac390",
+      "bytes": 7443,
+      "sha": "111123497629ad69838836875db4af46e411ed78",
       "chunks": [],
-      "deployment_path": "src/src/public-mobile.js"
+      "deployment_path": "src/public-mobile.js"
     },
     {
       "path": "radar-mini-runtime.js",
@@ -747,7 +747,7 @@
       "chunks": [
         "64-0.txt"
       ],
-      "deployment_path": "src/src/radar-mini-runtime.js"
+      "deployment_path": "src/radar-mini-runtime.js"
     },
     {
       "path": "radar-mini.css",
@@ -756,7 +756,7 @@
       "chunks": [
         "65-0.txt"
       ],
-      "deployment_path": "src/src/radar-mini.css"
+      "deployment_path": "src/radar-mini.css"
     },
     {
       "path": "radar-mini.js",
@@ -765,7 +765,7 @@
       "chunks": [
         "66-0.txt"
       ],
-      "deployment_path": "src/src/radar-mini.js"
+      "deployment_path": "src/radar-mini.js"
     },
     {
       "path": "radar-photo-build.js",
@@ -774,7 +774,7 @@
       "chunks": [
         "67-0.txt"
       ],
-      "deployment_path": "src/src/radar-photo-build.js"
+      "deployment_path": "src/radar-photo-build.js"
     },
     {
       "path": "radar-photo-v6.js",
@@ -783,7 +783,7 @@
       "chunks": [
         "68-0.txt"
       ],
-      "deployment_path": "src/src/radar-photo-v6.js"
+      "deployment_path": "src/radar-photo-v6.js"
     },
     {
       "path": "restore-daily.js",
@@ -792,7 +792,7 @@
       "chunks": [
         "69-0.txt"
       ],
-      "deployment_path": "src/src/restore-daily.js"
+      "deployment_path": "src/restore-daily.js"
     },
     {
       "path": "rice-lesson.html",
@@ -801,7 +801,7 @@
       "chunks": [
         "70-0.txt"
       ],
-      "deployment_path": "src/src/rice-lesson.html"
+      "deployment_path": "src/rice-lesson.html"
     },
     {
       "path": "site-polish.css",
@@ -810,21 +810,21 @@
       "chunks": [
         "71-0.txt"
       ],
-      "deployment_path": "src/src/site-polish.css"
+      "deployment_path": "src/site-polish.css"
     },
     {
       "path": "tech-background-build.js",
       "bytes": 159,
       "sha": "88d596be2cc1b83a0cb3712a2ce99b9cb37dbb7a",
       "chunks": [],
-      "deployment_path": "src/src/tech-background-build.js"
+      "deployment_path": "src/tech-background-build.js"
     },
     {
       "path": "tech-background-v1.js",
       "bytes": 2289,
       "sha": "3759a40fd6f825068787b1e3cc8d414d42b4d848",
       "chunks": [],
-      "deployment_path": "src/src/tech-background-v1.js"
+      "deployment_path": "src/tech-background-v1.js"
     },
     {
       "path": "translate-fogg-zh.js",
@@ -833,17 +833,17 @@
       "chunks": [
         "77-0.txt"
       ],
-      "deployment_path": "src/src/translate-fogg-zh.js"
+      "deployment_path": "src/translate-fogg-zh.js"
     },
     {
       "path": "vercel.json",
       "bytes": 97,
       "sha": "23b06cb7a8faa09c75f59a065ca2efc7d6434d84",
       "chunks": [],
-      "deployment_path": "src/src/vercel.json"
+      "deployment_path": "src/vercel.json"
     }
   ],
-  "verification": "Vercel production READY; actual Vercel file-list API returned all 98 source files. Public domain HTTP 200, Nov 28 issue and mobile patch verified. Build-generated output is listed separately.",
+  "verification": "Vercel production READY; 98 source files accounted for. Cache-busted public domain HTTP 200 with motion compatibility v2 and Nov 28 issue. Video asset build verified; six simulated runtime scenarios passed. Physical cross-browser playback not independently tested.",
   "output": {
     "homepage": "/index.html",
     "archive": "/archive/2026-11-27.html",
